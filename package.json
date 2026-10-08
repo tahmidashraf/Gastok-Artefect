@@ -1,0 +1,22 @@
+{
+  "name": "realshare",
+  "version": "1.0.0",
+  "description": "RealShare — fractional real-estate tokenization (ERC-1155) testnet experiments",
+  "scripts": {
+    "compile": "hardhat compile",
+    "clean": "hardhat clean"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "embedded-postgres": "^18.4.0-beta.17",
+    "fast-check": "^4.9.0",
+    "hardhat": "^2.22.10",
+    "pg": "^8.22.0",
+    "solhint": "^6.2.3",
+    "sql.js": "^1.14.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5"
+  }
+}

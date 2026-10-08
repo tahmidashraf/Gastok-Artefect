@@ -1,0 +1,88 @@
+{
+  "dataset": "OpenML credit-g (German Credit)",
+  "seed": 42,
+  "metric_note": "recall = high-risk (positive) class recall, the compliance-critical metric",
+  "results": [
+    {
+      "config": "IID_K5",
+      "clients": 5,
+      "partition": "IID",
+      "alpha": null,
+      "fedavg": {
+        "auc": 0.8085,
+        "f1": 0.6074,
+        "recall": 0.5467
+      },
+      "cbfed": {
+        "auc": 0.8107,
+        "f1": 0.6304,
+        "recall": 0.7733
+      }
+    },
+    {
+      "config": "nonIID_K5_a0.5",
+      "clients": 5,
+      "partition": "nonIID",
+      "alpha": 0.5,
+      "fedavg": {
+        "auc": 0.8098,
+        "f1": 0.5128,
+        "recall": 0.4
+      },
+      "cbfed": {
+        "auc": 0.788,
+        "f1": 0.6292,
+        "recall": 0.7467
+      }
+    },
+    {
+      "config": "IID_K10",
+      "clients": 10,
+      "partition": "IID",
+      "alpha": null,
+      "fedavg": {
+        "auc": 0.809,
+        "f1": 0.597,
+        "recall": 0.5333
+      },
+      "cbfed": {
+        "auc": 0.8099,
+        "f1": 0.6409,
+        "recall": 0.7733
+      }
+    },
+    {
+      "config": "nonIID_K10_a0.5",
+      "clients": 10,
+      "partition": "nonIID",
+      "alpha": 0.5,
+      "fedavg": {
+        "auc": 0.8045,
+        "f1": 0.5649,
+        "recall": 0.4933
+      },
+      "cbfed": {
+        "auc": 0.7868,
+        "f1": 0.5765,
+        "recall": 0.6533
+      }
+    },
+    {
+      "config": "nonIID_K10_a0.1",
+      "clients": 10,
+      "partition": "nonIID",
+      "alpha": 0.1,
+      "fedavg": {
+        "auc": 0.8087,
+        "f1": 0.5085,
+        "recall": 0.4
+      },
+      "cbfed": {
+        "auc": 0.8041,
+        "f1": 0.563,
+        "recall": 0.5067
+      }
+    }
+  ],
+  "elapsed_s": 0.5
+}

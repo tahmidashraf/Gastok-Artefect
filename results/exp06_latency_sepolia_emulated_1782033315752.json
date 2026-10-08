@@ -1,0 +1,141 @@
+{
+  "experiment": "exp06_latency",
+  "network": "sepolia_emulated",
+  "runMode": "block-time-emulated (12000ms interval)",
+  "blockIntervalMs": 12000,
+  "baseChainId": "31337",
+  "nativeSymbol": "ETH",
+  "timestamp": "2026-06-21T09:15:15.751Z",
+  "txnCount": 20,
+  "statistics": {
+    "count": 20,
+    "minMs": 11956,
+    "avgMs": 12009,
+    "p50Ms": 12005,
+    "p95Ms": 12050,
+    "p99Ms": 12060,
+    "maxMs": 12060
+  },
+  "samples": [
+    {
+      "idx": 1,
+      "blockNumber": 4,
+      "latencyMs": 11996,
+      "gasUsed": "81098"
+    },
+    {
+      "idx": 2,
+      "blockNumber": 5,
+      "latencyMs": 12005,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 3,
+      "blockNumber": 6,
+      "latencyMs": 12008,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 4,
+      "blockNumber": 7,
+      "latencyMs": 12060,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 5,
+      "blockNumber": 8,
+      "latencyMs": 12001,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 6,
+      "blockNumber": 9,
+      "latencyMs": 11998,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 7,
+      "blockNumber": 10,
+      "latencyMs": 12009,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 8,
+      "blockNumber": 11,
+      "latencyMs": 12050,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 9,
+      "blockNumber": 12,
+      "latencyMs": 11966,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 10,
+      "blockNumber": 13,
+      "latencyMs": 12031,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 11,
+      "blockNumber": 14,
+      "latencyMs": 11986,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 12,
+      "blockNumber": 15,
+      "latencyMs": 12020,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 13,
+      "blockNumber": 16,
+      "latencyMs": 12000,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 14,
+      "blockNumber": 17,
+      "latencyMs": 12034,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 15,
+      "blockNumber": 18,
+      "latencyMs": 12017,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 16,
+      "blockNumber": 19,
+      "latencyMs": 11994,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 17,
+      "blockNumber": 20,
+      "latencyMs": 11997,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 18,
+      "blockNumber": 21,
+      "latencyMs": 12034,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 19,
+      "blockNumber": 22,
+      "latencyMs": 11956,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 20,
+      "blockNumber": 23,
+      "latencyMs": 12012,
+      "gasUsed": "46898"
+    }
+  ]
+}

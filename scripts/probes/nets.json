@@ -1,0 +1,16 @@
+[
+  {"name":"Ethereum mainnet","url":"https://ethereum-rpc.publicnode.com"},
+  {"name":"Ethereum Sepolia","url":"https://ethereum-sepolia-rpc.publicnode.com"},
+  {"name":"Optimism mainnet","url":"https://optimism-rpc.publicnode.com"},
+  {"name":"Optimism Sepolia","url":"https://optimism-sepolia-rpc.publicnode.com"},
+  {"name":"Base mainnet","url":"https://base-rpc.publicnode.com"},
+  {"name":"Base Sepolia","url":"https://base-sepolia-rpc.publicnode.com"},
+  {"name":"BNB mainnet","url":"https://bsc-rpc.publicnode.com"},
+  {"name":"BNB testnet","url":"https://bsc-testnet-rpc.publicnode.com"},
+  {"name":"Avalanche C-Chain","url":"https://avalanche-c-chain-rpc.publicnode.com"},
+  {"name":"Avalanche Fuji","url":"https://avalanche-fuji-c-chain-rpc.publicnode.com"},
+  {"name":"Arbitrum One","url":"https://arbitrum-one-rpc.publicnode.com"},
+  {"name":"Arbitrum Sepolia","url":"https://arbitrum-sepolia-rpc.publicnode.com"},
+  {"name":"Polygon mainnet","url":"https://polygon-bor-rpc.publicnode.com"},
+  {"name":"Polygon Amoy","url":"https://polygon-amoy-bor-rpc.publicnode.com"}
+]

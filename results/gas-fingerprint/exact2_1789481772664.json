@@ -1,0 +1,1333 @@
+{
+  "experiment": "gas_schedule_fingerprint_exact_guarded",
+  "timestamp": "2026-09-15T14:01:00.318Z",
+  "baseline": "local Hardhat receipt gasUsed (Ethereum schedule, cancun)",
+  "baselineValues": {
+    "ProbeBaseline": 66854,
+    "ProbeColdSstore1": 89081,
+    "ProbeColdSstore2": 111288,
+    "ProbeColdSstore4": 155698,
+    "ProbeColdSstore8": 244479,
+    "ProbeColdSstore16": 421957,
+    "ProbeWarmSstore4": 89137,
+    "ProbeWarmSstore16": 92038,
+    "ProbeColdSload8": 106902,
+    "ProbeColdSload32": 158910,
+    "ProbeLog4": 71621,
+    "ProbeLog16": 84317,
+    "ProbeColdAccount8": 110926,
+    "ProbeColdAccount32": 174946,
+    "ProbeKeccak64": 95893,
+    "ProbeMemory": 90122,
+    "ProbeSloadThenSstore1": 89144,
+    "ProbeSloadThenSstore4": 156258
+  },
+  "chains": {
+    "Optimism Sepolia": {
+      "chainId": 11155420,
+      "family": "OP-Stack rollup",
+      "endpoint": "sepolia.optimism.io"
+    },
+    "Base Sepolia": {
+      "chainId": 84532,
+      "family": "OP-Stack rollup",
+      "endpoint": "sepolia.base.org"
+    },
+    "Ethereum Mainnet": {
+      "chainId": 1,
+      "family": "Ethereum L1",
+      "endpoint": "ethereum-rpc.publicnode.com"
+    },
+    "Optimism Mainnet": {
+      "chainId": 10,
+      "family": "OP-Stack rollup",
+      "endpoint": "optimism-rpc.publicnode.com"
+    },
+    "Base Mainnet": {
+      "chainId": 8453,
+      "family": "OP-Stack rollup",
+      "endpoint": "base-rpc.publicnode.com"
+    },
+    "BNB Smart Chain": {
+      "chainId": 56,
+      "family": "PoSA sidechain",
+      "endpoint": "bsc-rpc.publicnode.com"
+    }
+  },
+  "exact": {
+    "Optimism Sepolia": {
+      "ProbeBaseline": {
+        "exact": 66854,
+        "estimate": 67702,
+        "padding": 848,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdSstore1": {
+        "exact": 89081,
+        "estimate": 90017,
+        "padding": 936,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSstore2": {
+        "exact": 111288,
+        "estimate": 112312,
+        "padding": 1024,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 2
+      },
+      "ProbeColdSstore4": {
+        "exact": 155698,
+        "estimate": 156899,
+        "padding": 1201,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 4
+      },
+      "ProbeColdSstore8": {
+        "exact": 244479,
+        "estimate": 247587,
+        "padding": 3108,
+        "bisectionCalls": 18,
+        "coldSload": 0,
+        "coldSstore": 8
+      },
+      "ProbeColdSstore16": {
+        "exact": 421957,
+        "estimate": 426473,
+        "padding": 4516,
+        "bisectionCalls": 19,
+        "coldSload": 0,
+        "coldSstore": 16
+      },
+      "ProbeWarmSstore4": {
+        "exact": 89137,
+        "estimate": 90074,
+        "padding": 937,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeWarmSstore16": {
+        "exact": 92038,
+        "estimate": 92986,
+        "padding": 948,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSload8": {
+        "exact": 106902,
+        "estimate": 107909,
+        "padding": 1007,
+        "bisectionCalls": 16,
+        "coldSload": 8,
+        "coldSstore": 1
+      },
+      "ProbeColdSload32": {
+        "exact": 158910,
+        "estimate": 160123,
+        "padding": 1213,
+        "bisectionCalls": 17,
+        "coldSload": 32,
+        "coldSstore": 1
+      },
+      "ProbeLog4": {
+        "exact": 71621,
+        "estimate": 72488,
+        "padding": 867,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeLog16": {
+        "exact": 84317,
+        "estimate": 85234,
+        "padding": 917,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdAccount8": {
+        "exact": 110926,
+        "estimate": 111949,
+        "padding": 1023,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdAccount32": {
+        "exact": 174946,
+        "estimate": 177502,
+        "padding": 2556,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeKeccak64": {
+        "exact": 95893,
+        "estimate": 96856,
+        "padding": 963,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeMemory": {
+        "exact": 90122,
+        "estimate": 91063,
+        "padding": 941,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      }
+    },
+    "Base Sepolia": {
+      "ProbeBaseline": {
+        "exact": 66854,
+        "estimate": 67702,
+        "padding": 848,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdSstore1": {
+        "exact": 89081,
+        "estimate": 90017,
+        "padding": 936,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSstore2": {
+        "exact": 111288,
+        "estimate": 112312,
+        "padding": 1024,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 2
+      },
+      "ProbeColdSstore4": {
+        "exact": 155698,
+        "estimate": 156899,
+        "padding": 1201,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 4
+      },
+      "ProbeColdSstore8": {
+        "exact": 244479,
+        "estimate": 247587,
+        "padding": 3108,
+        "bisectionCalls": 18,
+        "coldSload": 0,
+        "coldSstore": 8
+      },
+      "ProbeColdSstore16": {
+        "exact": 421957,
+        "estimate": 426473,
+        "padding": 4516,
+        "bisectionCalls": 19,
+        "coldSload": 0,
+        "coldSstore": 16
+      },
+      "ProbeWarmSstore4": {
+        "exact": 89137,
+        "estimate": 90074,
+        "padding": 937,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeWarmSstore16": {
+        "exact": 92038,
+        "estimate": 92986,
+        "padding": 948,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSload8": {
+        "exact": 106902,
+        "estimate": 107909,
+        "padding": 1007,
+        "bisectionCalls": 16,
+        "coldSload": 8,
+        "coldSstore": 1
+      },
+      "ProbeColdSload32": {
+        "exact": 158910,
+        "estimate": 160123,
+        "padding": 1213,
+        "bisectionCalls": 17,
+        "coldSload": 32,
+        "coldSstore": 1
+      },
+      "ProbeLog4": {
+        "exact": 71621,
+        "estimate": 72488,
+        "padding": 867,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeLog16": {
+        "exact": 84317,
+        "estimate": 85234,
+        "padding": 917,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdAccount8": {
+        "exact": 110926,
+        "estimate": 111949,
+        "padding": 1023,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdAccount32": {
+        "exact": 174946,
+        "estimate": 177502,
+        "padding": 2556,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeKeccak64": {
+        "exact": 95893,
+        "estimate": 96856,
+        "padding": 963,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeMemory": {
+        "exact": 90122,
+        "estimate": 91063,
+        "padding": 941,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      }
+    },
+    "Ethereum Mainnet": {
+      "ProbeBaseline": {
+        "exact": 66854,
+        "estimate": 67702,
+        "padding": 848,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdSstore1": {
+        "exact": 89081,
+        "estimate": 90017,
+        "padding": 936,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSstore2": {
+        "exact": 111288,
+        "estimate": 112312,
+        "padding": 1024,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 2
+      },
+      "ProbeColdSstore4": {
+        "exact": 155698,
+        "estimate": 156899,
+        "padding": 1201,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 4
+      },
+      "ProbeColdSstore8": {
+        "exact": 244479,
+        "estimate": 247587,
+        "padding": 3108,
+        "bisectionCalls": 18,
+        "coldSload": 0,
+        "coldSstore": 8
+      },
+      "ProbeColdSstore16": {
+        "exact": 421957,
+        "estimate": 426473,
+        "padding": 4516,
+        "bisectionCalls": 19,
+        "coldSload": 0,
+        "coldSstore": 16
+      },
+      "ProbeWarmSstore4": {
+        "exact": 89137,
+        "estimate": 90074,
+        "padding": 937,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeWarmSstore16": {
+        "exact": 92038,
+        "estimate": 92986,
+        "padding": 948,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSload8": {
+        "exact": 106902,
+        "estimate": 107909,
+        "padding": 1007,
+        "bisectionCalls": 16,
+        "coldSload": 8,
+        "coldSstore": 1
+      },
+      "ProbeColdSload32": {
+        "exact": 158910,
+        "estimate": 160123,
+        "padding": 1213,
+        "bisectionCalls": 17,
+        "coldSload": 32,
+        "coldSstore": 1
+      },
+      "ProbeLog4": {
+        "exact": 71621,
+        "estimate": 72488,
+        "padding": 867,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeLog16": {
+        "exact": 84317,
+        "estimate": 85234,
+        "padding": 917,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdAccount8": {
+        "exact": 110926,
+        "estimate": 111949,
+        "padding": 1023,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdAccount32": {
+        "exact": 174946,
+        "estimate": 177502,
+        "padding": 2556,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeKeccak64": {
+        "exact": 95893,
+        "estimate": 96856,
+        "padding": 963,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeMemory": {
+        "exact": 90122,
+        "estimate": 91063,
+        "padding": 941,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      }
+    },
+    "Optimism Mainnet": {
+      "ProbeBaseline": {
+        "exact": 66854,
+        "estimate": 67702,
+        "padding": 848,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdSstore1": {
+        "exact": 89081,
+        "estimate": 90017,
+        "padding": 936,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSstore2": {
+        "exact": 111288,
+        "estimate": 112312,
+        "padding": 1024,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 2
+      },
+      "ProbeColdSstore4": {
+        "exact": 155698,
+        "estimate": 156899,
+        "padding": 1201,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 4
+      },
+      "ProbeColdSstore8": {
+        "exact": 244479,
+        "estimate": 247587,
+        "padding": 3108,
+        "bisectionCalls": 18,
+        "coldSload": 0,
+        "coldSstore": 8
+      },
+      "ProbeColdSstore16": {
+        "exact": 421957,
+        "estimate": 426473,
+        "padding": 4516,
+        "bisectionCalls": 19,
+        "coldSload": 0,
+        "coldSstore": 16
+      },
+      "ProbeWarmSstore4": {
+        "exact": 89137,
+        "estimate": 90074,
+        "padding": 937,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeWarmSstore16": {
+        "exact": 92038,
+        "estimate": 92986,
+        "padding": 948,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSload8": {
+        "exact": 106902,
+        "estimate": 107909,
+        "padding": 1007,
+        "bisectionCalls": 16,
+        "coldSload": 8,
+        "coldSstore": 1
+      },
+      "ProbeColdSload32": {
+        "exact": 158910,
+        "estimate": 160123,
+        "padding": 1213,
+        "bisectionCalls": 17,
+        "coldSload": 32,
+        "coldSstore": 1
+      },
+      "ProbeLog4": {
+        "exact": 71621,
+        "estimate": 72488,
+        "padding": 867,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeLog16": {
+        "exact": 84317,
+        "estimate": 85234,
+        "padding": 917,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdAccount8": {
+        "exact": 110926,
+        "estimate": 111949,
+        "padding": 1023,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdAccount32": {
+        "exact": 174946,
+        "estimate": 177502,
+        "padding": 2556,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeKeccak64": {
+        "exact": 95893,
+        "estimate": 96856,
+        "padding": 963,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeMemory": {
+        "exact": 90122,
+        "estimate": 91063,
+        "padding": 941,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      }
+    },
+    "Base Mainnet": {
+      "ProbeBaseline": {
+        "exact": 66854,
+        "estimate": 67702,
+        "padding": 848,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdSstore1": {
+        "exact": 89081,
+        "estimate": 90017,
+        "padding": 936,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSstore2": {
+        "exact": 111288,
+        "estimate": 112312,
+        "padding": 1024,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 2
+      },
+      "ProbeColdSstore4": {
+        "exact": 155698,
+        "estimate": 156899,
+        "padding": 1201,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 4
+      },
+      "ProbeColdSstore8": {
+        "exact": 244479,
+        "estimate": 247587,
+        "padding": 3108,
+        "bisectionCalls": 18,
+        "coldSload": 0,
+        "coldSstore": 8
+      },
+      "ProbeColdSstore16": {
+        "exact": 421957,
+        "estimate": 426473,
+        "padding": 4516,
+        "bisectionCalls": 19,
+        "coldSload": 0,
+        "coldSstore": 16
+      },
+      "ProbeWarmSstore4": {
+        "exact": 89137,
+        "estimate": 90074,
+        "padding": 937,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeWarmSstore16": {
+        "exact": 92038,
+        "estimate": 92986,
+        "padding": 948,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSload8": {
+        "exact": 106902,
+        "estimate": 107909,
+        "padding": 1007,
+        "bisectionCalls": 16,
+        "coldSload": 8,
+        "coldSstore": 1
+      },
+      "ProbeColdSload32": {
+        "exact": 158910,
+        "estimate": 160123,
+        "padding": 1213,
+        "bisectionCalls": 17,
+        "coldSload": 32,
+        "coldSstore": 1
+      },
+      "ProbeLog4": {
+        "exact": 71621,
+        "estimate": 72488,
+        "padding": 867,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeLog16": {
+        "exact": 84317,
+        "estimate": 85234,
+        "padding": 917,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdAccount8": {
+        "exact": 110926,
+        "estimate": 111949,
+        "padding": 1023,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdAccount32": {
+        "exact": 174946,
+        "estimate": 177502,
+        "padding": 2556,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeKeccak64": {
+        "exact": 95893,
+        "estimate": 96856,
+        "padding": 963,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeMemory": {
+        "exact": 90122,
+        "estimate": 91063,
+        "padding": 941,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      }
+    },
+    "BNB Smart Chain": {
+      "ProbeBaseline": {
+        "exact": 66854,
+        "estimate": 67702,
+        "padding": 848,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdSstore1": {
+        "exact": 89081,
+        "estimate": 90017,
+        "padding": 936,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSstore2": {
+        "exact": 111288,
+        "estimate": 112312,
+        "padding": 1024,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 2
+      },
+      "ProbeColdSstore4": {
+        "exact": 155698,
+        "estimate": 156899,
+        "padding": 1201,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 4
+      },
+      "ProbeColdSstore8": {
+        "exact": 244479,
+        "estimate": 247587,
+        "padding": 3108,
+        "bisectionCalls": 18,
+        "coldSload": 0,
+        "coldSstore": 8
+      },
+      "ProbeColdSstore16": {
+        "exact": 421957,
+        "estimate": 426473,
+        "padding": 4516,
+        "bisectionCalls": 19,
+        "coldSload": 0,
+        "coldSstore": 16
+      },
+      "ProbeWarmSstore4": {
+        "exact": 89137,
+        "estimate": 90074,
+        "padding": 937,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeWarmSstore16": {
+        "exact": 92038,
+        "estimate": 92986,
+        "padding": 948,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSload8": {
+        "exact": 106902,
+        "estimate": 107909,
+        "padding": 1007,
+        "bisectionCalls": 16,
+        "coldSload": 8,
+        "coldSstore": 1
+      },
+      "ProbeColdSload32": {
+        "exact": 158910,
+        "estimate": 160123,
+        "padding": 1213,
+        "bisectionCalls": 17,
+        "coldSload": 32,
+        "coldSstore": 1
+      },
+      "ProbeLog4": {
+        "exact": 71621,
+        "estimate": 72488,
+        "padding": 867,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeLog16": {
+        "exact": 84317,
+        "estimate": 85234,
+        "padding": 917,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdAccount8": {
+        "exact": 110926,
+        "estimate": 111949,
+        "padding": 1023,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdAccount32": {
+        "exact": 174946,
+        "estimate": 177502,
+        "padding": 2556,
+        "bisectionCalls": 17,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeKeccak64": {
+        "exact": 95893,
+        "estimate": 96856,
+        "padding": 963,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeMemory": {
+        "exact": 90122,
+        "estimate": 91063,
+        "padding": 941,
+        "bisectionCalls": 16,
+        "coldSload": 0,
+        "coldSstore": 1
+      }
+    }
+  },
+  "deltaVsLocal": {
+    "Optimism Sepolia": {
+      "ProbeBaseline": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdSstore1": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSstore2": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 2
+      },
+      "ProbeColdSstore4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 4
+      },
+      "ProbeColdSstore8": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 8
+      },
+      "ProbeColdSstore16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 16
+      },
+      "ProbeWarmSstore4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeWarmSstore16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSload8": {
+        "delta": 0,
+        "coldSload": 8,
+        "coldSstore": 1
+      },
+      "ProbeColdSload32": {
+        "delta": 0,
+        "coldSload": 32,
+        "coldSstore": 1
+      },
+      "ProbeLog4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeLog16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdAccount8": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdAccount32": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeKeccak64": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeMemory": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      }
+    },
+    "Base Sepolia": {
+      "ProbeBaseline": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdSstore1": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSstore2": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 2
+      },
+      "ProbeColdSstore4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 4
+      },
+      "ProbeColdSstore8": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 8
+      },
+      "ProbeColdSstore16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 16
+      },
+      "ProbeWarmSstore4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeWarmSstore16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSload8": {
+        "delta": 0,
+        "coldSload": 8,
+        "coldSstore": 1
+      },
+      "ProbeColdSload32": {
+        "delta": 0,
+        "coldSload": 32,
+        "coldSstore": 1
+      },
+      "ProbeLog4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeLog16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdAccount8": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdAccount32": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeKeccak64": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeMemory": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      }
+    },
+    "Ethereum Mainnet": {
+      "ProbeBaseline": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdSstore1": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSstore2": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 2
+      },
+      "ProbeColdSstore4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 4
+      },
+      "ProbeColdSstore8": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 8
+      },
+      "ProbeColdSstore16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 16
+      },
+      "ProbeWarmSstore4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeWarmSstore16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSload8": {
+        "delta": 0,
+        "coldSload": 8,
+        "coldSstore": 1
+      },
+      "ProbeColdSload32": {
+        "delta": 0,
+        "coldSload": 32,
+        "coldSstore": 1
+      },
+      "ProbeLog4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeLog16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdAccount8": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdAccount32": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeKeccak64": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeMemory": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      }
+    },
+    "Optimism Mainnet": {
+      "ProbeBaseline": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdSstore1": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSstore2": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 2
+      },
+      "ProbeColdSstore4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 4
+      },
+      "ProbeColdSstore8": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 8
+      },
+      "ProbeColdSstore16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 16
+      },
+      "ProbeWarmSstore4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeWarmSstore16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSload8": {
+        "delta": 0,
+        "coldSload": 8,
+        "coldSstore": 1
+      },
+      "ProbeColdSload32": {
+        "delta": 0,
+        "coldSload": 32,
+        "coldSstore": 1
+      },
+      "ProbeLog4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeLog16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdAccount8": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdAccount32": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeKeccak64": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeMemory": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      }
+    },
+    "Base Mainnet": {
+      "ProbeBaseline": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdSstore1": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSstore2": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 2
+      },
+      "ProbeColdSstore4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 4
+      },
+      "ProbeColdSstore8": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 8
+      },
+      "ProbeColdSstore16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 16
+      },
+      "ProbeWarmSstore4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeWarmSstore16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSload8": {
+        "delta": 0,
+        "coldSload": 8,
+        "coldSstore": 1
+      },
+      "ProbeColdSload32": {
+        "delta": 0,
+        "coldSload": 32,
+        "coldSstore": 1
+      },
+      "ProbeLog4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeLog16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdAccount8": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdAccount32": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeKeccak64": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeMemory": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      }
+    },
+    "BNB Smart Chain": {
+      "ProbeBaseline": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdSstore1": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSstore2": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 2
+      },
+      "ProbeColdSstore4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 4
+      },
+      "ProbeColdSstore8": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 8
+      },
+      "ProbeColdSstore16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 16
+      },
+      "ProbeWarmSstore4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeWarmSstore16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdSload8": {
+        "delta": 0,
+        "coldSload": 8,
+        "coldSstore": 1
+      },
+      "ProbeColdSload32": {
+        "delta": 0,
+        "coldSload": 32,
+        "coldSstore": 1
+      },
+      "ProbeLog4": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeLog16": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 0
+      },
+      "ProbeColdAccount8": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeColdAccount32": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeKeccak64": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      },
+      "ProbeMemory": {
+        "delta": 0,
+        "coldSload": 0,
+        "coldSstore": 1
+      }
+    }
+  }
+}

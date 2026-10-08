@@ -1,0 +1,46 @@
+# RealShare off-chain synchronisation stack (production-style deployment).
+# The thesis experiments used embedded-postgres (a real PostgreSQL binary, no Docker) because the
+# evaluation host lacked Docker; this compose file reproduces the same schema and services on a
+# standalone PostgreSQL for deployment. Secrets come from a local .env (never committed).
+version: "3.9"
+services:
+  postgres:
+    image: postgres:18
+    environment:
+      POSTGRES_USER: ${PGUSER:-rs}
+      POSTGRES_PASSWORD: ${PGPASSWORD:?set in .env}
+      POSTGRES_DB: ${PGDATABASE:-realshare}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./database/migrations:/docker-entrypoint-initdb.d:ro
+    command:
+      - "postgres"
+      - "-c"
+      - "max_connections=100"
+      - "-c"
+      - "default_transaction_isolation=read committed"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${PGUSER:-rs}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  sync-worker:
+    build: .
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      PGHOST: postgres
+      PGPORT: 5432
+      PGUSER: ${PGUSER:-rs}
+      PGPASSWORD: ${PGPASSWORD}
+      PGDATABASE: ${PGDATABASE:-realshare}
+      RPC_URL: ${SEPOLIA_RPC_URL}
+      CONTRACT_ADDRESS: "0x40aBAe00C9308159e66Bf86fCF6E33df175732AE"
+    command: ["node", "src/pg-sync-runner.mjs"]
+
+volumes:
+  pgdata:

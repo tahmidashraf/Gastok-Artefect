@@ -1,0 +1,80 @@
+{
+  "experiment": "local_ethereum_schedule_baseline",
+  "timestamp": "2026-09-14T17:20:33.182Z",
+  "schedule": "Ethereum (Hardhat, evm cancun, solc 0.8.27, optimizer 200)",
+  "note": "exact receipt gasUsed; regenerate whenever GasProbes.sol changes",
+  "probes": {
+    "ProbeBaseline": {
+      "gasUsed": 66854,
+      "bytecodeSha256": "fcb2d3c8fe072d9b"
+    },
+    "ProbeColdSstore1": {
+      "gasUsed": 89081,
+      "bytecodeSha256": "2277621f558fb878"
+    },
+    "ProbeColdSstore2": {
+      "gasUsed": 111288,
+      "bytecodeSha256": "ecb6b50d4bb37a1e"
+    },
+    "ProbeColdSstore4": {
+      "gasUsed": 155698,
+      "bytecodeSha256": "0c7b625fc8689c82"
+    },
+    "ProbeColdSstore8": {
+      "gasUsed": 244479,
+      "bytecodeSha256": "4d7bc313f3216e0a"
+    },
+    "ProbeColdSstore16": {
+      "gasUsed": 421957,
+      "bytecodeSha256": "47bccaeca43e7178"
+    },
+    "ProbeWarmSstore4": {
+      "gasUsed": 89137,
+      "bytecodeSha256": "377da561a8d8feb0"
+    },
+    "ProbeWarmSstore16": {
+      "gasUsed": 92038,
+      "bytecodeSha256": "fcd6b0717ddf0047"
+    },
+    "ProbeColdSload8": {
+      "gasUsed": 106902,
+      "bytecodeSha256": "6f480e354478e72a"
+    },
+    "ProbeColdSload32": {
+      "gasUsed": 158910,
+      "bytecodeSha256": "49038001caac5f9a"
+    },
+    "ProbeLog4": {
+      "gasUsed": 71621,
+      "bytecodeSha256": "e3bc96b1b780343d"
+    },
+    "ProbeLog16": {
+      "gasUsed": 84317,
+      "bytecodeSha256": "5f952097f17013d1"
+    },
+    "ProbeColdAccount8": {
+      "gasUsed": 110926,
+      "bytecodeSha256": "582470fb2b12d663"
+    },
+    "ProbeColdAccount32": {
+      "gasUsed": 174946,
+      "bytecodeSha256": "e963336daeb1310e"
+    },
+    "ProbeKeccak64": {
+      "gasUsed": 95893,
+      "bytecodeSha256": "2d5aeb3c49ee9da3"
+    },
+    "ProbeMemory": {
+      "gasUsed": 90122,
+      "bytecodeSha256": "6ed541eab6b9b6ea"
+    },
+    "ProbeSloadThenSstore1": {
+      "gasUsed": 89144,
+      "bytecodeSha256": "a14a67eac61b3b10"
+    },
+    "ProbeSloadThenSstore4": {
+      "gasUsed": 156258,
+      "bytecodeSha256": "199184f726baa300"
+    }
+  }
+}

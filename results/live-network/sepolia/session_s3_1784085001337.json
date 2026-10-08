@@ -1,0 +1,67 @@
+{
+  "experiment": "live_session_lite",
+  "tag": "s3",
+  "network": "sepolia",
+  "chainId": 11155111,
+  "contract": "0x40aBAe00C9308159e66Bf86fCF6E33df175732AE",
+  "wallet": "0x71C59a35b79A18b0A44540501cB900761DC32fD0",
+  "gasPriceWei": "1033192236",
+  "startBalance": "337987756426207",
+  "timestamp": "2026-07-15T03:09:13.973Z",
+  "operations": [
+    {
+      "label": "listProperty",
+      "txHash": "0xa80d5aac7f4f2f19ffbe0b466735afc5949ba366e7533be35b6ef50598c3dc4f",
+      "block": 11275083,
+      "status": 1,
+      "gasUsed": 96585,
+      "effectiveGasPriceWei": "1015292969",
+      "feeWei": "98062071410865",
+      "timeToHashMs": 1894,
+      "confirmationLatencyMs": 11228,
+      "error": null
+    },
+    {
+      "label": "approveKYC",
+      "txHash": "0x640d71f874f72197b05af8d6bdeca1ac891398b3c8754eab93ecf3ec09ca5de0",
+      "block": 11275085,
+      "status": 1,
+      "gasUsed": 47316,
+      "effectiveGasPriceWei": "1093067372",
+      "feeWei": "51719575773552",
+      "timeToHashMs": 1218,
+      "confirmationLatencyMs": 25883,
+      "error": null
+    },
+    {
+      "label": "mintFractions",
+      "txHash": "0x4a30cfeb573f0452da3e40afa697d1e260cced816f7bbb62ca8c637e55701483",
+      "block": 11275086,
+      "status": 1,
+      "gasUsed": 83610,
+      "effectiveGasPriceWei": "1138233858",
+      "feeWei": "95167732867380",
+      "timeToHashMs": 1165,
+      "confirmationLatencyMs": 8866,
+      "error": null
+    },
+    {
+      "label": "approveKYC(self)",
+      "skipped": true,
+      "reason": "insufficient residual balance"
+    },
+    {
+      "label": "mintFractions#2",
+      "skipped": true,
+      "reason": "insufficient residual balance"
+    },
+    {
+      "label": "safeTransfer",
+      "skipped": true,
+      "reason": "insufficient residual balance"
+    }
+  ],
+  "endBalance": "93038376374410",
+  "spentWei": "244949380051797",
+  "confirmedCount": 3
+}

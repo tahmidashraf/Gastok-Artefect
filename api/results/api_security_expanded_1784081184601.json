@@ -1,0 +1,196 @@
+{
+  "experiment": "api_security_expanded",
+  "timestamp": "2026-07-15T02:06:24.600Z",
+  "passed": 31,
+  "total": 31,
+  "controls": 31,
+  "remediated": true,
+  "tests": [
+    {
+      "name": "Access without token",
+      "category": "Auth",
+      "pass": true,
+      "detail": "HTTP 401"
+    },
+    {
+      "name": "Invalid token",
+      "category": "Auth",
+      "pass": true,
+      "detail": "HTTP 401"
+    },
+    {
+      "name": "Tampered JWT payload",
+      "category": "Auth",
+      "pass": true,
+      "detail": "HTTP 401"
+    },
+    {
+      "name": "Malformed Bearer prefix",
+      "category": "Auth",
+      "pass": true,
+      "detail": "HTTP 401"
+    },
+    {
+      "name": "Valid token grants access",
+      "category": "Auth",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "SQL injection in login",
+      "category": "Injection",
+      "pass": true,
+      "detail": "HTTP 401"
+    },
+    {
+      "name": "Missing required fields",
+      "category": "Validation",
+      "pass": true,
+      "detail": "HTTP 400"
+    },
+    {
+      "name": "X-Content-Type-Options",
+      "category": "Headers",
+      "pass": true,
+      "detail": "nosniff"
+    },
+    {
+      "name": "X-Frame-Options",
+      "category": "Headers",
+      "pass": true,
+      "detail": "SAMEORIGIN"
+    },
+    {
+      "name": "X-Powered-By hidden",
+      "category": "Headers",
+      "pass": true,
+      "detail": "present:false"
+    },
+    {
+      "name": "Content-Security-Policy",
+      "category": "Headers",
+      "pass": true,
+      "detail": "present:true"
+    },
+    {
+      "name": "Strict-Transport-Security",
+      "category": "Headers",
+      "pass": true,
+      "detail": "present:true"
+    },
+    {
+      "name": "CORS origin restricted",
+      "category": "Headers",
+      "pass": true,
+      "detail": "ACAO:https://realshare.example"
+    },
+    {
+      "name": "Oversized body rejected",
+      "category": "Validation",
+      "pass": true,
+      "detail": "HTTP 413"
+    },
+    {
+      "name": "Expired JWT rejected",
+      "category": "JWT",
+      "pass": true,
+      "detail": "HTTP 401"
+    },
+    {
+      "name": "alg:none token rejected",
+      "category": "JWT",
+      "pass": true,
+      "detail": "HTTP 401"
+    },
+    {
+      "name": "Forged-role token (wrong secret) rejected",
+      "category": "JWT",
+      "pass": true,
+      "detail": "HTTP 401"
+    },
+    {
+      "name": "Token replay after logout rejected",
+      "category": "JWT",
+      "pass": true,
+      "detail": "HTTP 401"
+    },
+    {
+      "name": "IDOR cross-user resource blocked",
+      "category": "AuthZ",
+      "pass": true,
+      "detail": "HTTP 403"
+    },
+    {
+      "name": "Own resource accessible",
+      "category": "AuthZ",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "Investor cannot approve KYC",
+      "category": "AuthZ",
+      "pass": true,
+      "detail": "HTTP 403"
+    },
+    {
+      "name": "Investor cannot mint",
+      "category": "AuthZ",
+      "pass": true,
+      "detail": "HTTP 403"
+    },
+    {
+      "name": "Admin can mint (positive control)",
+      "category": "AuthZ",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "Mass assignment (role) ignored",
+      "category": "AuthZ",
+      "pass": true,
+      "detail": "role=investor"
+    },
+    {
+      "name": "NoSQL object injection rejected",
+      "category": "Injection",
+      "pass": true,
+      "detail": "HTTP 401"
+    },
+    {
+      "name": "No account enumeration",
+      "category": "AuthZ",
+      "pass": true,
+      "detail": "both HTTP 401, identical body"
+    },
+    {
+      "name": "Unsupported method returns 405",
+      "category": "Validation",
+      "pass": true,
+      "detail": "HTTP 405"
+    },
+    {
+      "name": "Nested JSON handled without 500",
+      "category": "Validation",
+      "pass": true,
+      "detail": "HTTP 400"
+    },
+    {
+      "name": "Malformed JSON -> 400, no stack leak",
+      "category": "Validation",
+      "pass": true,
+      "detail": "HTTP 400"
+    },
+    {
+      "name": "Structurally malformed JWT rejected",
+      "category": "JWT",
+      "pass": true,
+      "detail": "HTTP 401"
+    },
+    {
+      "name": "Brute-force rate limiting",
+      "category": "Rate Limit",
+      "pass": true,
+      "detail": "429 after repeated failures"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "env": {
+    "experiment": "local_evm_contract_execution_throughput",
+    "timestamp": "2026-07-15T02:07:10.636Z",
+    "note": "Local EVM contract-execution throughput. NOT Polygon network TPS.",
+    "reps": 5,
+    "automine": true,
+    "blockGasLimit": 60000000,
+    "signers": 20,
+    "nonceStrategy": "single owner signer, sequential nonces, Promise.all submission",
+    "warmup": "one throwaway mint before timing each level",
+    "cpu": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+    "cpuCores": 8,
+    "ramGB": 16.9,
+    "os": "Windows_NT 10.0.26200 x64",
+    "node": "v18.14.0",
+    "hardhat": "2.28.6",
+    "ethers": "6.17.0",
+    "solc": "0.8.27 (optimizer 200, cancun)"
+  },
+  "levels": [
+    {
+      "level": 5,
+      "tps": {
+        "n": 5,
+        "mean": 902.4,
+        "median": 833.3,
+        "min": 714.3,
+        "max": 1250,
+        "sd": 202.92
+      },
+      "elapsedMs": {
+        "n": 5,
+        "mean": 5.8,
+        "median": 6,
+        "min": 4,
+        "max": 7,
+        "sd": 1.17
+      },
+      "reverts": 0,
+      "avgGasPerMint": 49386
+    },
+    {
+      "level": 10,
+      "tps": {
+        "n": 5,
+        "mean": 1030.3,
+        "median": 1111.1,
+        "min": 909.1,
+        "max": 1111.1,
+        "sd": 98.96
+      },
+      "elapsedMs": {
+        "n": 5,
+        "mean": 9.8,
+        "median": 9,
+        "min": 9,
+        "max": 11,
+        "sd": 0.98
+      },
+      "reverts": 0,
+      "avgGasPerMint": 49386
+    },
+    {
+      "level": 25,
+      "tps": {
+        "n": 5,
+        "mean": 1009.7,
+        "median": 1000,
+        "min": 961.5,
+        "max": 1087,
+        "sd": 41.43
+      },
+      "elapsedMs": {
+        "n": 5,
+        "mean": 24.8,
+        "median": 25,
+        "min": 23,
+        "max": 26,
+        "sd": 0.98
+      },
+      "reverts": 0,
+      "avgGasPerMint": 49386
+    },
+    {
+      "level": 50,
+      "tps": {
+        "n": 5,
+        "mean": 1009.9,
+        "median": 1000,
+        "min": 961.5,
+        "max": 1087,
+        "sd": 43.28
+      },
+      "elapsedMs": {
+        "n": 5,
+        "mean": 49.6,
+        "median": 50,
+        "min": 46,
+        "max": 52,
+        "sd": 2.06
+      },
+      "reverts": 0,
+      "avgGasPerMint": 49386
+    },
+    {
+      "level": 100,
+      "tps": {
+        "n": 5,
+        "mean": 920.8,
+        "median": 925.9,
+        "min": 813,
+        "max": 1041.7,
+        "sd": 79.2
+      },
+      "elapsedMs": {
+        "n": 5,
+        "mean": 109.4,
+        "median": 108,
+        "min": 96,
+        "max": 123,
+        "sd": 9.37
+      },
+      "reverts": 0,
+      "avgGasPerMint": 49386
+    },
+    {
+      "level": 200,
+      "tps": {
+        "n": 5,
+        "mean": 1008.5,
+        "median": 1005,
+        "min": 975.6,
+        "max": 1041.7,
+        "sd": 21.23
+      },
+      "elapsedMs": {
+        "n": 5,
+        "mean": 198.4,
+        "median": 199,
+        "min": 192,
+        "max": 205,
+        "sd": 4.18
+      },
+      "reverts": 0,
+      "avgGasPerMint": 49386
+    },
+    {
+      "level": 500,
+      "tps": {
+        "n": 5,
+        "mean": 920.8,
+        "median": 943.4,
+        "min": 866.6,
+        "max": 952.4,
+        "sd": 34.67
+      },
+      "elapsedMs": {
+        "n": 5,
+        "mean": 543.8,
+        "median": 530,
+        "min": 525,
+        "max": 577,
+        "sd": 20.93
+      },
+      "reverts": 0,
+      "avgGasPerMint": 49386
+    }
+  ],
+  "peakTpsMean": 1030.3
+}

@@ -1,0 +1,71 @@
+{
+  "experiment": "end_to_end_pipeline",
+  "network": "hardhat",
+  "note": "local EVM: gas deterministic; wall-clock local only (live latency = Phase 11)",
+  "stages": {
+    "hashModel": {
+      "ms": 0,
+      "modelHash": "0xb2542a077e191ac9af22a1ed752d59636a01ae324fab38668a24828841ff9fd5",
+      "artifactBytes": 25
+    },
+    "deploy": {
+      "modelRegistry": 262038,
+      "token": 1918983
+    },
+    "anchor": {
+      "gas": 92231,
+      "ms": 5
+    },
+    "verify": {
+      "ok": true,
+      "ms": 3
+    },
+    "listProperty": {
+      "gas": 96571
+    },
+    "kycApprove": {
+      "gas": 47316,
+      "ms": 2
+    },
+    "mintAuthorize": {
+      "gas": 83586,
+      "ms": 4
+    },
+    "total": {
+      "gasExclDeploy": 319704,
+      "localWallClockMs": 14,
+      "liveLatencyNote": "add live per-tx confirmation from Phase 11 (Amoy ~3.4s live median) x 2 on-chain writes (anchor, mint)"
+    }
+  },
+  "negatives": {
+    "incorrectHash": {
+      "rejected": true,
+      "detail": "verify(recomputed!=anchored)"
+    },
+    "staleModel": {
+      "rejected": true,
+      "detail": "round 999 unanchored -> zero hash"
+    },
+    "unauthorizedAnchor": {
+      "rejected": true,
+      "reason": "revert"
+    },
+    "nonKycMint": {
+      "rejected": true,
+      "reason": "revert"
+    },
+    "deactivatedMint": {
+      "rejected": true,
+      "reason": "revert"
+    },
+    "revokedTransfer": {
+      "rejected": true,
+      "reason": "revert"
+    }
+  },
+  "timestamp": 1784571103237,
+  "negativesSummary": {
+    "total": 6,
+    "allRejected": true
+  }
+}

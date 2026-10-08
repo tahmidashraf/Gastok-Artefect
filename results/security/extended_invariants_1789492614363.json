@@ -1,0 +1,31 @@
+{
+  "experiment": "extended_invariants",
+  "timestamp": "2026-09-15T17:16:54.363Z",
+  "passed": "4/4",
+  "results": [
+    {
+      "id": "I1",
+      "name": "KYC revocation not bypassable by same-block ordering",
+      "passed": true,
+      "detail": "sameBlock=true revokeFirst=true transferStatus=0 balance 100->100"
+    },
+    {
+      "id": "I2",
+      "name": "Batch transfer is atomic (no partial success)",
+      "passed": true,
+      "detail": "reverted=true balances unchanged=true"
+    },
+    {
+      "id": "I3",
+      "name": "Revoked sender cannot transfer",
+      "passed": true,
+      "detail": "reverted=true"
+    },
+    {
+      "id": "I4",
+      "name": "Randomised sequences: supply conserved, KYC gate never bypassed",
+      "passed": true,
+      "detail": "steps=120 sum=735 minted=735 kycViolations=0"
+    }
+  ]
+}

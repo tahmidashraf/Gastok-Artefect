@@ -1,0 +1,88 @@
+{
+  "experiment": "live_session_lite",
+  "tag": "s2",
+  "network": "sepolia",
+  "chainId": 11155111,
+  "contract": "0x40aBAe00C9308159e66Bf86fCF6E33df175732AE",
+  "wallet": "0x71C59a35b79A18b0A44540501cB900761DC32fD0",
+  "gasPriceWei": "964471076",
+  "startBalance": "730338971809682",
+  "timestamp": "2026-07-15T03:07:22.506Z",
+  "operations": [
+    {
+      "label": "listProperty",
+      "txHash": "0x44565ae98e46a04c5627f125502d92c0ddb3ce602ca6a3afb3a6551c7ac6392d",
+      "block": 11275074,
+      "status": 1,
+      "gasUsed": 96585,
+      "effectiveGasPriceWei": "1101988953",
+      "feeWei": "106435603025505",
+      "timeToHashMs": 1572,
+      "confirmationLatencyMs": 13410,
+      "error": null
+    },
+    {
+      "label": "approveKYC",
+      "txHash": "0x2b65640407919b12172997c6eb21975f65e2bee588bf4faf727066aa85061d3f",
+      "block": 11275075,
+      "status": 1,
+      "gasUsed": 47316,
+      "effectiveGasPriceWei": "1055254024",
+      "feeWei": "49930399399584",
+      "timeToHashMs": 1161,
+      "confirmationLatencyMs": 11733,
+      "error": null
+    },
+    {
+      "label": "mintFractions",
+      "txHash": "0x7bb99feeae1d374211e259c44bcb7604d91afd595b57217fa66b0f8eeca1f9c0",
+      "block": 11275076,
+      "status": 1,
+      "gasUsed": 83610,
+      "effectiveGasPriceWei": "995291725",
+      "feeWei": "83216341127250",
+      "timeToHashMs": 1116,
+      "confirmationLatencyMs": 12216,
+      "error": null
+    },
+    {
+      "label": "approveKYC(self)",
+      "txHash": "0xe08e6d90b5a9af62c7a1b5ce99735795d4ba9f4b6f62f28b5222ad90b0d0986c",
+      "block": 11275077,
+      "status": 1,
+      "gasUsed": 27404,
+      "effectiveGasPriceWei": "1124157103",
+      "feeWei": "30806401250612",
+      "timeToHashMs": 1306,
+      "confirmationLatencyMs": 12283,
+      "error": null
+    },
+    {
+      "label": "mintFractions#2",
+      "txHash": "0xbb331ebcfbd080a6e3a476a6f989958d82b490b3db80da84bac2f83f5b0efed5",
+      "block": 11275078,
+      "status": 1,
+      "gasUsed": 63998,
+      "effectiveGasPriceWei": "1114089949",
+      "feeWei": "71299528556102",
+      "timeToHashMs": 1626,
+      "confirmationLatencyMs": 11020,
+      "error": null
+    },
+    {
+      "label": "safeTransfer",
+      "txHash": "0x5120e47a0a9a57ca38f5c4aa8363e43eba645bcb9bb88fcb5374b2162a2ea763",
+      "block": 11275079,
+      "status": 1,
+      "gasUsed": 46982,
+      "effectiveGasPriceWei": "1078347921",
+      "feeWei": "50662942024422",
+      "timeToHashMs": 1447,
+      "confirmationLatencyMs": 14238,
+      "error": null
+    }
+  ],
+  "endBalance": "337987756426207",
+  "spentWei": "392351215383475",
+  "confirmedCount": 6
+}

@@ -1,0 +1,116 @@
+{
+  "Ethereum mainnet": {
+    "url": "https://ethereum-rpc.publicnode.com",
+    "chainId": 1,
+    "block": 26039401,
+    "rows": [
+      {
+        "n": 1,
+        "A": 75238,
+        "B": 77607,
+        "dirtyTotal": 2369,
+        "W1": 23105,
+        "W2": 26011,
+        "resetTotal": 2906,
+        "perReset": 2906
+      },
+      {
+        "n": 2,
+        "A": 97424,
+        "B": 99979,
+        "dirtyTotal": 2555,
+        "W1": 25210,
+        "W2": 31022,
+        "resetTotal": 5812,
+        "perReset": 2906
+      },
+      {
+        "n": 4,
+        "A": 141796,
+        "B": 144725,
+        "dirtyTotal": 2929,
+        "W1": 29420,
+        "W2": 41044,
+        "resetTotal": 11624,
+        "perReset": 2906
+      },
+      {
+        "n": 8,
+        "A": 230542,
+        "B": 234215,
+        "dirtyTotal": 3673,
+        "W1": 37840,
+        "W2": 61088,
+        "resetTotal": 23248,
+        "perReset": 2906
+      },
+      {
+        "n": 16,
+        "A": 408032,
+        "B": 413197,
+        "dirtyTotal": 5165,
+        "W1": 54680,
+        "W2": 101176,
+        "resetTotal": 46496,
+        "perReset": 2906
+      }
+    ]
+  },
+  "Polygon mainnet": {
+    "url": "https://polygon-bor-rpc.publicnode.com",
+    "chainId": 137,
+    "block": 94301392,
+    "rows": [
+      {
+        "n": 1,
+        "A": 76078,
+        "B": 78447,
+        "dirtyTotal": 2369,
+        "W1": 26465,
+        "W2": 28772,
+        "resetTotal": 2307,
+        "perReset": 2307
+      },
+      {
+        "n": 2,
+        "A": 99104,
+        "B": 101659,
+        "dirtyTotal": 2555,
+        "W1": 31930,
+        "W2": 36303,
+        "resetTotal": 4373,
+        "perReset": 2186.5
+      },
+      {
+        "n": 4,
+        "A": 145156,
+        "B": 148085,
+        "dirtyTotal": 2929,
+        "W1": 42860,
+        "W2": 51365,
+        "resetTotal": 8505,
+        "perReset": 2126.25
+      },
+      {
+        "n": 8,
+        "A": 237262,
+        "B": 240935,
+        "dirtyTotal": 3673,
+        "W1": 64720,
+        "W2": 81489,
+        "resetTotal": 16769,
+        "perReset": 2096.125
+      },
+      {
+        "n": 16,
+        "A": 421472,
+        "B": 426637,
+        "dirtyTotal": 5165,
+        "W1": 108440,
+        "W2": 141737,
+        "resetTotal": 33297,
+        "perReset": 2081.0625
+      }
+    ]
+  }
+}

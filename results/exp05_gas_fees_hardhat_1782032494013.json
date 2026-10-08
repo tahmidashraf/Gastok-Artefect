@@ -1,0 +1,112 @@
+{
+  "experiment": "exp05_gas_fees",
+  "network": "hardhat",
+  "chainId": "31337",
+  "nativeSymbol": "ETH",
+  "timestamp": "2026-06-21T09:01:34.013Z",
+  "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "totalGasUsed": "571353",
+  "totalNativeSpent": "0.00409618215561238",
+  "operations": [
+    {
+      "label": "listProperty",
+      "txHash": "0x8f8ddc0bf72e2dafc7cc71eefd83935fd724021bda167d55f55f30bf3d2ce8a8",
+      "blockNumber": 2,
+      "latencyMs": 3,
+      "gasUsed": "96657",
+      "gasPriceWei": "1771836622",
+      "feeWei": "171260412372654",
+      "feeEther": "0.000171260412372654"
+    },
+    {
+      "label": "approveKYC(self)",
+      "txHash": "0x6bd497c377ad483dcb8d25783961384aa32a8d80fd9fb8c49f0f360e285770f9",
+      "blockNumber": 3,
+      "latencyMs": 2,
+      "gasUsed": "47316",
+      "gasPriceWei": "1675667892",
+      "feeWei": "79285901977872",
+      "feeEther": "0.000079285901977872"
+    },
+    {
+      "label": "approveKYC",
+      "txHash": "0xc51484f02a0ffccb57bc7d73773162b916272054fcf9ebbd9c0bb90a4935921d",
+      "blockNumber": 4,
+      "latencyMs": 2,
+      "gasUsed": "47316",
+      "gasPriceWei": "1591342614",
+      "feeWei": "75295967124024",
+      "feeEther": "0.000075295967124024"
+    },
+    {
+      "label": "mintFractions#1",
+      "txHash": "0x3f9c3167acc4b9fad3d654f2c323ef00911491c6646cdff6ed16ed664bf5410d",
+      "blockNumber": 6,
+      "latencyMs": 2,
+      "gasUsed": "81110",
+      "gasPriceWei": "1452950733",
+      "feeWei": "117848833953630",
+      "feeEther": "0.00011784883395363"
+    },
+    {
+      "label": "mintFractions#2",
+      "txHash": "0x4f61ef1e334d0b197bff77a6711fc5467626041a5f25f33717d287c76341c98b",
+      "blockNumber": 7,
+      "latencyMs": 2,
+      "gasUsed": "46910",
+      "gasPriceWei": "1396484970",
+      "feeWei": "65509109942700",
+      "feeEther": "0.0000655091099427"
+    },
+    {
+      "label": "mintFractions#3",
+      "txHash": "0x4906c6a0bdf1f17819f8d03c1368d2678ffca3efc093466eacdbf3973ebaaa26",
+      "blockNumber": 8,
+      "latencyMs": 3,
+      "gasUsed": "46910",
+      "gasPriceWei": "1347001846",
+      "feeWei": "63187856595860",
+      "feeEther": "0.00006318785659586"
+    },
+    {
+      "label": "mintFractions#4",
+      "txHash": "0x0f8536bf30a3da2714afb09c7fd3fae93a43929c7639219244fe0190d30c156b",
+      "blockNumber": 9,
+      "latencyMs": 2,
+      "gasUsed": "46910",
+      "gasPriceWei": "1303694440",
+      "feeWei": "61156306180400",
+      "feeEther": "0.0000611563061804"
+    },
+    {
+      "label": "safeTransferFrom#1",
+      "txHash": "0x01e38911b5c1b4266176b7742f6fc6d8cb67fa8d74df93e21dd2d2c4915b4aa6",
+      "blockNumber": 10,
+      "latencyMs": 3,
+      "gasUsed": "64082",
+      "gasPriceWei": "1265791995",
+      "feeWei": "81114482623590",
+      "feeEther": "0.00008111448262359"
+    },
+    {
+      "label": "safeTransferFrom#2",
+      "txHash": "0xf5a678755e05a6778cac51797d03f32f6a1c440c3237adc2346e9a30fa4f531b",
+      "blockNumber": 11,
+      "latencyMs": 2,
+      "gasUsed": "64094",
+      "gasPriceWei": "1232638965",
+      "feeWei": "79004761822710",
+      "feeEther": "0.00007900476182271"
+    },
+    {
+      "label": "deactivateProperty",
+      "txHash": "0xc7aa72468b0b6dbfa129685094385d5658c9cbabb51c40d262085cf5accd70a2",
+      "blockNumber": 12,
+      "latencyMs": 1,
+      "gasUsed": "30048",
+      "gasPriceWei": "1203621223",
+      "feeWei": "36166410508704",
+      "feeEther": "0.000036166410508704"
+    }
+  ]
+}

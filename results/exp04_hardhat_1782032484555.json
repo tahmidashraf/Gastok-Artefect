@@ -1,0 +1,75 @@
+{
+  "experiment": "exp04_network_comparison",
+  "network": "hardhat",
+  "chainId": "31337",
+  "nativeSymbol": "ETH",
+  "timestamp": "2026-06-21T09:01:24.554Z",
+  "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "startBalance": "10000.0",
+  "endBalance": "9999.996263217728428292",
+  "totalNativeSpent": "0.003736782271571708",
+  "totalGasUsed": "2040348",
+  "operations": [
+    {
+      "label": "deploy",
+      "txHash": "0x5313c466fff4b7fc17510cd84355a850b905c8aadd9ae30949385532ca14ca35",
+      "blockNumber": 1,
+      "latencyMs": 13,
+      "gasUsed": "1703759",
+      "gasPriceWei": "1875000000",
+      "feeWei": "3194548125000000",
+      "feeEther": "0.003194548125"
+    },
+    {
+      "label": "listProperty",
+      "txHash": "0x32c1080a6f22368b4dbfc03082164fd0090c84343da6129470b596ccc9c6e1bd",
+      "blockNumber": 2,
+      "latencyMs": 3,
+      "gasUsed": "96765",
+      "gasPriceWei": "1771836622",
+      "feeWei": "171451770727830",
+      "feeEther": "0.00017145177072783"
+    },
+    {
+      "label": "approveKYC",
+      "txHash": "0x2293fc920c74ef7718a138c3206b52cd7c7688baedf3c456e4a39c744b786093",
+      "blockNumber": 3,
+      "latencyMs": 2,
+      "gasUsed": "47316",
+      "gasPriceWei": "1675668240",
+      "feeWei": "79285918443840",
+      "feeEther": "0.00007928591844384"
+    },
+    {
+      "label": "approveKYC(self)",
+      "txHash": "0x1d4187098a33ac71164b4d1dafd54b8a4535af63b8c75e5b59694bd131ca7985",
+      "blockNumber": 4,
+      "latencyMs": 1,
+      "gasUsed": "47316",
+      "gasPriceWei": "1591342918",
+      "feeWei": "75295981508088",
+      "feeEther": "0.000075295981508088"
+    },
+    {
+      "label": "mintFractions",
+      "txHash": "0x199e2a53d8886f1706cf4bf2b1649aa4a54b3b89bac9f757767a247b7641f092",
+      "blockNumber": 5,
+      "latencyMs": 1,
+      "gasUsed": "81110",
+      "gasPriceWei": "1517541637",
+      "feeWei": "123087802177070",
+      "feeEther": "0.00012308780217707"
+    },
+    {
+      "label": "safeTransferFrom",
+      "txHash": "0x3ee484eb93ffea77fd590085f13568162b46a3406883c697180e9f0b07c8bb30",
+      "blockNumber": 6,
+      "latencyMs": 6,
+      "gasUsed": "64082",
+      "gasPriceWei": "1453023840",
+      "feeWei": "93112673714880",
+      "feeEther": "0.00009311267371488"
+    }
+  ]
+}

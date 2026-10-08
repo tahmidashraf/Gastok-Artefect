@@ -1,0 +1,131 @@
+{
+  "experiment": "exp06_latency",
+  "network": "polygonAmoy",
+  "runMode": "live-testnet",
+  "blockIntervalMs": null,
+  "baseChainId": "80002",
+  "nativeSymbol": "POL",
+  "timestamp": "2026-06-21T10:29:09.170Z",
+  "txnCount": 18,
+  "note": "18 of 20 tx completed; run stopped by testnet gas budget. All samples are real on-chain confirmations.",
+  "statistics": {
+    "count": 18,
+    "minMs": 2335,
+    "avgMs": 3415,
+    "p50Ms": 3032,
+    "p75Ms": 4169,
+    "p95Ms": 4966,
+    "p99Ms": 4966,
+    "maxMs": 4966
+  },
+  "samples": [
+    {
+      "idx": 1,
+      "blockNumber": 40537380,
+      "latencyMs": 4966,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 2,
+      "blockNumber": 40537382,
+      "latencyMs": 4177,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 3,
+      "blockNumber": 40537384,
+      "latencyMs": 2409,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 4,
+      "blockNumber": 40537386,
+      "latencyMs": 3031,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 5,
+      "blockNumber": 40537388,
+      "latencyMs": 3019,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 6,
+      "blockNumber": 40537390,
+      "latencyMs": 3032,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 7,
+      "blockNumber": 40537392,
+      "latencyMs": 2690,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 8,
+      "blockNumber": 40537394,
+      "latencyMs": 3853,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 9,
+      "blockNumber": 40537396,
+      "latencyMs": 4222,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 10,
+      "blockNumber": 40537398,
+      "latencyMs": 2335,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 11,
+      "blockNumber": 40537400,
+      "latencyMs": 3861,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 12,
+      "blockNumber": 40537402,
+      "latencyMs": 4200,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 13,
+      "blockNumber": 40537404,
+      "latencyMs": 2741,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 14,
+      "blockNumber": 40537406,
+      "latencyMs": 3141,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 15,
+      "blockNumber": 40537408,
+      "latencyMs": 3017,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 16,
+      "blockNumber": 40537410,
+      "latencyMs": 2690,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 17,
+      "blockNumber": 40537412,
+      "latencyMs": 3915,
+      "gasUsed": "65366"
+    },
+    {
+      "idx": 18,
+      "blockNumber": 40537414,
+      "latencyMs": 4169,
+      "gasUsed": "65366"
+    }
+  ]
+}

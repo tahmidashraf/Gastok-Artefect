@@ -1,0 +1,1851 @@
+{
+  "experiment": "cross_chain_gas_schedule_fingerprint",
+  "timestamp": "2026-09-14T15:42:18.327Z",
+  "method": "eth_estimateGas on identical init bytecode; no deployment, no funded account",
+  "baselineChain": "Ethereum Sepolia",
+  "reps": 3,
+  "solc": "0.8.27, optimizer 200 runs, evm cancun",
+  "chains": {
+    "Ethereum Sepolia": {
+      "chainId": 11155111,
+      "family": "Ethereum L1 testnet"
+    },
+    "Optimism Sepolia": {
+      "chainId": 11155420,
+      "family": "OP-Stack rollup"
+    },
+    "Base Sepolia": {
+      "chainId": 84532,
+      "family": "OP-Stack rollup"
+    },
+    "Arbitrum Sepolia": {
+      "chainId": 421614,
+      "family": "Nitro rollup"
+    },
+    "Polygon Amoy": {
+      "chainId": 80002,
+      "family": "PoS commit-chain"
+    },
+    "BSC Testnet": {
+      "chainId": 97,
+      "family": "PoSA sidechain"
+    },
+    "Avalanche Fuji": {
+      "chainId": 43113,
+      "family": "Subnet-EVM C-Chain"
+    }
+  },
+  "probes": [
+    {
+      "name": "ProbeBaseline",
+      "class": "baseline",
+      "n": 0
+    },
+    {
+      "name": "ProbeColdSstore1",
+      "class": "cold SSTORE",
+      "n": 1
+    },
+    {
+      "name": "ProbeColdSstore2",
+      "class": "cold SSTORE",
+      "n": 2
+    },
+    {
+      "name": "ProbeColdSstore4",
+      "class": "cold SSTORE",
+      "n": 4
+    },
+    {
+      "name": "ProbeColdSstore8",
+      "class": "cold SSTORE",
+      "n": 8
+    },
+    {
+      "name": "ProbeColdSstore16",
+      "class": "cold SSTORE",
+      "n": 16
+    },
+    {
+      "name": "ProbeWarmSstore4",
+      "class": "warm SSTORE",
+      "n": 4
+    },
+    {
+      "name": "ProbeWarmSstore16",
+      "class": "warm SSTORE",
+      "n": 16
+    },
+    {
+      "name": "ProbeColdSload8",
+      "class": "cold SLOAD",
+      "n": 8
+    },
+    {
+      "name": "ProbeColdSload32",
+      "class": "cold SLOAD",
+      "n": 32
+    },
+    {
+      "name": "ProbeLog4",
+      "class": "LOG1",
+      "n": 4
+    },
+    {
+      "name": "ProbeLog16",
+      "class": "LOG1",
+      "n": 16
+    },
+    {
+      "name": "ProbeColdAccount8",
+      "class": "cold account",
+      "n": 8
+    },
+    {
+      "name": "ProbeColdAccount32",
+      "class": "cold account",
+      "n": 32
+    },
+    {
+      "name": "ProbeKeccak64",
+      "class": "compute (control)",
+      "n": 64
+    },
+    {
+      "name": "ProbeMemory",
+      "class": "memory (control)",
+      "n": 1
+    }
+  ],
+  "absolute": {
+    "Ethereum Sepolia": {
+      "ProbeBaseline": {
+        "gas": 67702,
+        "samples": [
+          67702,
+          67702,
+          67702
+        ],
+        "stable": true,
+        "class": "baseline",
+        "n": 0,
+        "endpoint": "1rpc.io"
+      },
+      "ProbeColdSstore1": {
+        "gas": 90017,
+        "samples": [
+          90017,
+          90017,
+          90017
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 1,
+        "endpoint": "1rpc.io"
+      },
+      "ProbeColdSstore2": {
+        "gas": 112312,
+        "samples": [
+          112312,
+          112312,
+          112312
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 2,
+        "endpoint": "1rpc.io"
+      },
+      "ProbeColdSstore4": {
+        "error": "chain is not available on free plan, please upgrade to paid plan",
+        "class": "cold SSTORE",
+        "n": 4
+      },
+      "ProbeColdSstore8": {
+        "gas": 247587,
+        "samples": [
+          247587,
+          247587,
+          247587
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 8,
+        "endpoint": "1rpc.io"
+      },
+      "ProbeColdSstore16": {
+        "gas": 426485,
+        "samples": [
+          426485,
+          426485,
+          426485
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 16,
+        "endpoint": "1rpc.io"
+      },
+      "ProbeWarmSstore4": {
+        "gas": 90074,
+        "samples": [
+          90074,
+          90074,
+          90074
+        ],
+        "stable": true,
+        "class": "warm SSTORE",
+        "n": 4,
+        "endpoint": "1rpc.io"
+      },
+      "ProbeWarmSstore16": {
+        "gas": 92986,
+        "samples": [
+          92986,
+          92986,
+          92986
+        ],
+        "stable": true,
+        "class": "warm SSTORE",
+        "n": 16,
+        "endpoint": "1rpc.io"
+      },
+      "ProbeColdSload8": {
+        "gas": 107909,
+        "samples": [
+          107909,
+          107909,
+          107909
+        ],
+        "stable": true,
+        "class": "cold SLOAD",
+        "n": 8,
+        "endpoint": "1rpc.io"
+      },
+      "ProbeColdSload32": {
+        "error": "chain is not available on free plan, please upgrade to paid plan",
+        "class": "cold SLOAD",
+        "n": 32
+      },
+      "ProbeLog4": {
+        "gas": 72488,
+        "samples": [
+          72488,
+          72488,
+          72488
+        ],
+        "stable": true,
+        "class": "LOG1",
+        "n": 4,
+        "endpoint": "1rpc.io"
+      },
+      "ProbeLog16": {
+        "gas": 85222,
+        "samples": [
+          85222,
+          85222,
+          85222
+        ],
+        "stable": true,
+        "class": "LOG1",
+        "n": 16,
+        "endpoint": "1rpc.io"
+      },
+      "ProbeColdAccount8": {
+        "gas": 111961,
+        "samples": [
+          111961,
+          111961,
+          111961
+        ],
+        "stable": true,
+        "class": "cold account",
+        "n": 8,
+        "endpoint": "1rpc.io"
+      },
+      "ProbeColdAccount32": {
+        "error": "chain is not available on free plan, please upgrade to paid plan",
+        "class": "cold account",
+        "n": 32
+      },
+      "ProbeKeccak64": {
+        "gas": 96856,
+        "samples": [
+          96856,
+          96856,
+          96856
+        ],
+        "stable": true,
+        "class": "compute (control)",
+        "n": 64,
+        "endpoint": "1rpc.io"
+      },
+      "ProbeMemory": {
+        "gas": 91063,
+        "samples": [
+          91063,
+          91063,
+          91063
+        ],
+        "stable": true,
+        "class": "memory (control)",
+        "n": 1,
+        "endpoint": "1rpc.io"
+      }
+    },
+    "Optimism Sepolia": {
+      "ProbeBaseline": {
+        "gas": 67702,
+        "samples": [
+          67702,
+          67702,
+          67702
+        ],
+        "stable": true,
+        "class": "baseline",
+        "n": 0,
+        "endpoint": "sepolia.optimism.io"
+      },
+      "ProbeColdSstore1": {
+        "gas": 90017,
+        "samples": [
+          90017,
+          90017,
+          90017
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 1,
+        "endpoint": "sepolia.optimism.io"
+      },
+      "ProbeColdSstore2": {
+        "gas": 112312,
+        "samples": [
+          112312,
+          112312,
+          112312
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 2,
+        "endpoint": "sepolia.optimism.io"
+      },
+      "ProbeColdSstore4": {
+        "gas": 156899,
+        "samples": [
+          156899,
+          156899,
+          156899
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 4,
+        "endpoint": "sepolia.optimism.io"
+      },
+      "ProbeColdSstore8": {
+        "gas": 247587,
+        "samples": [
+          247587,
+          247587,
+          247587
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 8,
+        "endpoint": "sepolia.optimism.io"
+      },
+      "ProbeColdSstore16": {
+        "gas": 426485,
+        "samples": [
+          426485,
+          426485,
+          426485
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 16,
+        "endpoint": "sepolia.optimism.io"
+      },
+      "ProbeWarmSstore4": {
+        "gas": 90074,
+        "samples": [
+          90074,
+          90074,
+          90074
+        ],
+        "stable": true,
+        "class": "warm SSTORE",
+        "n": 4,
+        "endpoint": "sepolia.optimism.io"
+      },
+      "ProbeWarmSstore16": {
+        "gas": 92986,
+        "samples": [
+          92986,
+          92986,
+          92986
+        ],
+        "stable": true,
+        "class": "warm SSTORE",
+        "n": 16,
+        "endpoint": "sepolia.optimism.io"
+      },
+      "ProbeColdSload8": {
+        "gas": 107909,
+        "samples": [
+          107909,
+          107909,
+          107909
+        ],
+        "stable": true,
+        "class": "cold SLOAD",
+        "n": 8,
+        "endpoint": "sepolia.optimism.io"
+      },
+      "ProbeColdSload32": {
+        "gas": 160123,
+        "samples": [
+          160123,
+          160123,
+          160123
+        ],
+        "stable": true,
+        "class": "cold SLOAD",
+        "n": 32,
+        "endpoint": "sepolia.optimism.io"
+      },
+      "ProbeLog4": {
+        "gas": 72488,
+        "samples": [
+          72488,
+          72488,
+          72488
+        ],
+        "stable": true,
+        "class": "LOG1",
+        "n": 4,
+        "endpoint": "sepolia.optimism.io"
+      },
+      "ProbeLog16": {
+        "gas": 85222,
+        "samples": [
+          85222,
+          85222,
+          85222
+        ],
+        "stable": true,
+        "class": "LOG1",
+        "n": 16,
+        "endpoint": "sepolia.optimism.io"
+      },
+      "ProbeColdAccount8": {
+        "gas": 111961,
+        "samples": [
+          111961,
+          111961,
+          111961
+        ],
+        "stable": true,
+        "class": "cold account",
+        "n": 8,
+        "endpoint": "sepolia.optimism.io"
+      },
+      "ProbeColdAccount32": {
+        "gas": 177502,
+        "samples": [
+          177502,
+          177502,
+          177502
+        ],
+        "stable": true,
+        "class": "cold account",
+        "n": 32,
+        "endpoint": "sepolia.optimism.io"
+      },
+      "ProbeKeccak64": {
+        "gas": 96856,
+        "samples": [
+          96856,
+          96856,
+          96856
+        ],
+        "stable": true,
+        "class": "compute (control)",
+        "n": 64,
+        "endpoint": "sepolia.optimism.io"
+      },
+      "ProbeMemory": {
+        "gas": 91063,
+        "samples": [
+          91063,
+          91063,
+          91063
+        ],
+        "stable": true,
+        "class": "memory (control)",
+        "n": 1,
+        "endpoint": "sepolia.optimism.io"
+      }
+    },
+    "Base Sepolia": {
+      "ProbeBaseline": {
+        "gas": 67702,
+        "samples": [
+          67702,
+          67702,
+          67702
+        ],
+        "stable": true,
+        "class": "baseline",
+        "n": 0,
+        "endpoint": "sepolia.base.org"
+      },
+      "ProbeColdSstore1": {
+        "gas": 90017,
+        "samples": [
+          90017,
+          90017,
+          90017
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 1,
+        "endpoint": "sepolia.base.org"
+      },
+      "ProbeColdSstore2": {
+        "gas": 112312,
+        "samples": [
+          112312,
+          112312,
+          112312
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 2,
+        "endpoint": "sepolia.base.org"
+      },
+      "ProbeColdSstore4": {
+        "gas": 156899,
+        "samples": [
+          156899,
+          156899,
+          156899
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 4,
+        "endpoint": "sepolia.base.org"
+      },
+      "ProbeColdSstore8": {
+        "gas": 247587,
+        "samples": [
+          247587,
+          247587,
+          247587
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 8,
+        "endpoint": "sepolia.base.org"
+      },
+      "ProbeColdSstore16": {
+        "gas": 426485,
+        "samples": [
+          426485,
+          426485,
+          426485
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 16,
+        "endpoint": "sepolia.base.org"
+      },
+      "ProbeWarmSstore4": {
+        "gas": 90074,
+        "samples": [
+          90074,
+          90074,
+          90074
+        ],
+        "stable": true,
+        "class": "warm SSTORE",
+        "n": 4,
+        "endpoint": "sepolia.base.org"
+      },
+      "ProbeWarmSstore16": {
+        "gas": 92986,
+        "samples": [
+          92986,
+          92986,
+          92986
+        ],
+        "stable": true,
+        "class": "warm SSTORE",
+        "n": 16,
+        "endpoint": "sepolia.base.org"
+      },
+      "ProbeColdSload8": {
+        "gas": 107909,
+        "samples": [
+          107909,
+          107909,
+          107909
+        ],
+        "stable": true,
+        "class": "cold SLOAD",
+        "n": 8,
+        "endpoint": "sepolia.base.org"
+      },
+      "ProbeColdSload32": {
+        "gas": 160123,
+        "samples": [
+          160123,
+          160123,
+          160123
+        ],
+        "stable": true,
+        "class": "cold SLOAD",
+        "n": 32,
+        "endpoint": "sepolia.base.org"
+      },
+      "ProbeLog4": {
+        "gas": 72488,
+        "samples": [
+          72488,
+          72488,
+          72488
+        ],
+        "stable": true,
+        "class": "LOG1",
+        "n": 4,
+        "endpoint": "sepolia.base.org"
+      },
+      "ProbeLog16": {
+        "gas": 85222,
+        "samples": [
+          85222,
+          85222,
+          85222
+        ],
+        "stable": true,
+        "class": "LOG1",
+        "n": 16,
+        "endpoint": "sepolia.base.org"
+      },
+      "ProbeColdAccount8": {
+        "gas": 111961,
+        "samples": [
+          111961,
+          111961,
+          111961
+        ],
+        "stable": true,
+        "class": "cold account",
+        "n": 8,
+        "endpoint": "sepolia.base.org"
+      },
+      "ProbeColdAccount32": {
+        "gas": 177502,
+        "samples": [
+          177502,
+          177502,
+          177502
+        ],
+        "stable": true,
+        "class": "cold account",
+        "n": 32,
+        "endpoint": "sepolia.base.org"
+      },
+      "ProbeKeccak64": {
+        "gas": 96856,
+        "samples": [
+          96856,
+          96856,
+          96856
+        ],
+        "stable": true,
+        "class": "compute (control)",
+        "n": 64,
+        "endpoint": "sepolia.base.org"
+      },
+      "ProbeMemory": {
+        "gas": 91063,
+        "samples": [
+          91063,
+          91063,
+          91063
+        ],
+        "stable": true,
+        "class": "memory (control)",
+        "n": 1,
+        "endpoint": "sepolia.base.org"
+      }
+    },
+    "Arbitrum Sepolia": {
+      "ProbeBaseline": {
+        "gas": 67962,
+        "samples": [
+          67962,
+          67961,
+          67965
+        ],
+        "stable": false,
+        "class": "baseline",
+        "n": 0,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      },
+      "ProbeColdSstore1": {
+        "gas": 90288,
+        "samples": [
+          90288,
+          90290,
+          90290
+        ],
+        "stable": false,
+        "class": "cold SSTORE",
+        "n": 1,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      },
+      "ProbeColdSstore2": {
+        "gas": 112589,
+        "samples": [
+          112589,
+          112589,
+          112587
+        ],
+        "stable": false,
+        "class": "cold SSTORE",
+        "n": 2,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      },
+      "ProbeColdSstore4": {
+        "gas": 157194,
+        "samples": [
+          157194,
+          157190,
+          157190
+        ],
+        "stable": false,
+        "class": "cold SSTORE",
+        "n": 4,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      },
+      "ProbeColdSstore8": {
+        "gas": 247910,
+        "samples": [
+          247910,
+          247910,
+          247902
+        ],
+        "stable": false,
+        "class": "cold SSTORE",
+        "n": 8,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      },
+      "ProbeColdSstore16": {
+        "gas": 426860,
+        "samples": [
+          426860,
+          426845,
+          426860
+        ],
+        "stable": false,
+        "class": "cold SSTORE",
+        "n": 16,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      },
+      "ProbeWarmSstore4": {
+        "gas": 90348,
+        "samples": [
+          90348,
+          90346,
+          90349
+        ],
+        "stable": false,
+        "class": "warm SSTORE",
+        "n": 4,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      },
+      "ProbeWarmSstore16": {
+        "gas": 93292,
+        "samples": [
+          93292,
+          93293,
+          93290
+        ],
+        "stable": false,
+        "class": "warm SSTORE",
+        "n": 16,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      },
+      "ProbeColdSload8": {
+        "gas": 108218,
+        "samples": [
+          108218,
+          108214,
+          108218
+        ],
+        "stable": false,
+        "class": "cold SLOAD",
+        "n": 8,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      },
+      "ProbeColdSload32": {
+        "gas": 160429,
+        "samples": [
+          160429,
+          160433,
+          160433
+        ],
+        "stable": false,
+        "class": "cold SLOAD",
+        "n": 32,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      },
+      "ProbeLog4": {
+        "gas": 72784,
+        "samples": [
+          72784,
+          72788,
+          72788
+        ],
+        "stable": false,
+        "class": "LOG1",
+        "n": 4,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      },
+      "ProbeLog16": {
+        "gas": 85522,
+        "samples": [
+          85522,
+          85523,
+          85520
+        ],
+        "stable": false,
+        "class": "LOG1",
+        "n": 16,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      },
+      "ProbeColdAccount8": {
+        "gas": 112269,
+        "samples": [
+          112269,
+          112272,
+          112270
+        ],
+        "stable": false,
+        "class": "cold account",
+        "n": 8,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      },
+      "ProbeColdAccount32": {
+        "gas": 177815,
+        "samples": [
+          177815,
+          177813,
+          177815
+        ],
+        "stable": false,
+        "class": "cold account",
+        "n": 32,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      },
+      "ProbeKeccak64": {
+        "gas": 97167,
+        "samples": [
+          97167,
+          97165,
+          97172
+        ],
+        "stable": false,
+        "class": "compute (control)",
+        "n": 64,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      },
+      "ProbeMemory": {
+        "gas": 91344,
+        "samples": [
+          91344,
+          91346,
+          91345
+        ],
+        "stable": false,
+        "class": "memory (control)",
+        "n": 1,
+        "endpoint": "sepolia-rollup.arbitrum.io"
+      }
+    },
+    "Polygon Amoy": {
+      "ProbeBaseline": {
+        "gas": 67702,
+        "samples": [
+          67702,
+          67702,
+          67702
+        ],
+        "stable": true,
+        "class": "baseline",
+        "n": 0,
+        "endpoint": "polygon-amoy.drpc.org"
+      },
+      "ProbeColdSstore1": {
+        "gas": 90861,
+        "samples": [
+          90861,
+          90861,
+          90861
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 1,
+        "endpoint": "polygon-amoy.drpc.org"
+      },
+      "ProbeColdSstore2": {
+        "gas": 113999,
+        "samples": [
+          113999,
+          113999,
+          113999
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 2,
+        "endpoint": "polygon-amoy.drpc.org"
+      },
+      "ProbeColdSstore4": {
+        "gas": 160272,
+        "samples": [
+          160272,
+          160272,
+          160272
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 4,
+        "endpoint": "polygon-amoy.drpc.org"
+      },
+      "ProbeColdSstore8": {
+        "gas": 254360,
+        "samples": [
+          254360,
+          254360,
+          254360
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 8,
+        "endpoint": "polygon-amoy.drpc.org"
+      },
+      "ProbeColdSstore16": {
+        "gas": 440032,
+        "samples": [
+          440032,
+          440032,
+          440032
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 16,
+        "endpoint": "polygon-amoy.drpc.org"
+      },
+      "ProbeWarmSstore4": {
+        "gas": 90917,
+        "samples": [
+          90917,
+          90917,
+          90917
+        ],
+        "stable": true,
+        "class": "warm SSTORE",
+        "n": 4,
+        "endpoint": "polygon-amoy.drpc.org"
+      },
+      "ProbeWarmSstore16": {
+        "gas": 93829,
+        "samples": [
+          93829,
+          93829,
+          93829
+        ],
+        "stable": true,
+        "class": "warm SSTORE",
+        "n": 16,
+        "endpoint": "polygon-amoy.drpc.org"
+      },
+      "ProbeColdSload8": {
+        "gas": 135739,
+        "samples": [
+          135739,
+          135739,
+          135739
+        ],
+        "stable": true,
+        "class": "cold SLOAD",
+        "n": 8,
+        "endpoint": "polygon-amoy.drpc.org"
+      },
+      "ProbeColdSload32": {
+        "gas": 270558,
+        "samples": [
+          270558,
+          270558,
+          270558
+        ],
+        "stable": true,
+        "class": "cold SLOAD",
+        "n": 32,
+        "endpoint": "polygon-amoy.drpc.org"
+      },
+      "ProbeLog4": {
+        "gas": 72488,
+        "samples": [
+          72488,
+          72488,
+          72488
+        ],
+        "stable": true,
+        "class": "LOG1",
+        "n": 4,
+        "endpoint": "polygon-amoy.drpc.org"
+      },
+      "ProbeLog16": {
+        "gas": 85222,
+        "samples": [
+          85222,
+          85222,
+          85222
+        ],
+        "stable": true,
+        "class": "LOG1",
+        "n": 16,
+        "endpoint": "polygon-amoy.drpc.org"
+      },
+      "ProbeColdAccount8": {
+        "gas": 112804,
+        "samples": [
+          112804,
+          112804,
+          112804
+        ],
+        "stable": true,
+        "class": "cold account",
+        "n": 8,
+        "endpoint": "polygon-amoy.drpc.org"
+      },
+      "ProbeColdAccount32": {
+        "gas": 178348,
+        "samples": [
+          178348,
+          178348,
+          178348
+        ],
+        "stable": true,
+        "class": "cold account",
+        "n": 32,
+        "endpoint": "polygon-amoy.drpc.org"
+      },
+      "ProbeKeccak64": {
+        "gas": 97700,
+        "samples": [
+          97700,
+          97700,
+          97700
+        ],
+        "stable": true,
+        "class": "compute (control)",
+        "n": 64,
+        "endpoint": "polygon-amoy.drpc.org"
+      },
+      "ProbeMemory": {
+        "error": "You reached Public endpoint rate limit, please upgrade to paid plan",
+        "class": "memory (control)",
+        "n": 1
+      }
+    },
+    "BSC Testnet": {
+      "ProbeBaseline": {
+        "gas": 67702,
+        "samples": [
+          67702,
+          67702,
+          67702
+        ],
+        "stable": true,
+        "class": "baseline",
+        "n": 0,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      },
+      "ProbeColdSstore1": {
+        "gas": 90017,
+        "samples": [
+          90017,
+          90017,
+          90017
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 1,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      },
+      "ProbeColdSstore2": {
+        "gas": 112312,
+        "samples": [
+          112312,
+          112312,
+          112312
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 2,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      },
+      "ProbeColdSstore4": {
+        "gas": 156899,
+        "samples": [
+          156899,
+          156899,
+          156899
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 4,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      },
+      "ProbeColdSstore8": {
+        "gas": 247587,
+        "samples": [
+          247587,
+          247587,
+          247587
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 8,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      },
+      "ProbeColdSstore16": {
+        "gas": 426485,
+        "samples": [
+          426485,
+          426485,
+          426485
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 16,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      },
+      "ProbeWarmSstore4": {
+        "gas": 90074,
+        "samples": [
+          90074,
+          90074,
+          90074
+        ],
+        "stable": true,
+        "class": "warm SSTORE",
+        "n": 4,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      },
+      "ProbeWarmSstore16": {
+        "gas": 92986,
+        "samples": [
+          92986,
+          92986,
+          92986
+        ],
+        "stable": true,
+        "class": "warm SSTORE",
+        "n": 16,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      },
+      "ProbeColdSload8": {
+        "gas": 107909,
+        "samples": [
+          107909,
+          107909,
+          107909
+        ],
+        "stable": true,
+        "class": "cold SLOAD",
+        "n": 8,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      },
+      "ProbeColdSload32": {
+        "gas": 160123,
+        "samples": [
+          160123,
+          160123,
+          160123
+        ],
+        "stable": true,
+        "class": "cold SLOAD",
+        "n": 32,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      },
+      "ProbeLog4": {
+        "gas": 72488,
+        "samples": [
+          72488,
+          72488,
+          72488
+        ],
+        "stable": true,
+        "class": "LOG1",
+        "n": 4,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      },
+      "ProbeLog16": {
+        "gas": 85222,
+        "samples": [
+          85222,
+          85222,
+          85222
+        ],
+        "stable": true,
+        "class": "LOG1",
+        "n": 16,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      },
+      "ProbeColdAccount8": {
+        "gas": 111961,
+        "samples": [
+          111961,
+          111961,
+          111961
+        ],
+        "stable": true,
+        "class": "cold account",
+        "n": 8,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      },
+      "ProbeColdAccount32": {
+        "gas": 177502,
+        "samples": [
+          177502,
+          177502,
+          177502
+        ],
+        "stable": true,
+        "class": "cold account",
+        "n": 32,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      },
+      "ProbeKeccak64": {
+        "gas": 96856,
+        "samples": [
+          96856,
+          96856,
+          96856
+        ],
+        "stable": true,
+        "class": "compute (control)",
+        "n": 64,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      },
+      "ProbeMemory": {
+        "gas": 91063,
+        "samples": [
+          91063,
+          91063,
+          91063
+        ],
+        "stable": true,
+        "class": "memory (control)",
+        "n": 1,
+        "endpoint": "data-seed-prebsc-1-s1.bnbchain.org:8545"
+      }
+    },
+    "Avalanche Fuji": {
+      "ProbeBaseline": {
+        "gas": 67702,
+        "samples": [
+          67702,
+          67702,
+          67702
+        ],
+        "stable": true,
+        "class": "baseline",
+        "n": 0,
+        "endpoint": "api.avax-test.network"
+      },
+      "ProbeColdSstore1": {
+        "gas": 90017,
+        "samples": [
+          90017,
+          90017,
+          90017
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 1,
+        "endpoint": "api.avax-test.network"
+      },
+      "ProbeColdSstore2": {
+        "gas": 112312,
+        "samples": [
+          112312,
+          112312,
+          112312
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 2,
+        "endpoint": "api.avax-test.network"
+      },
+      "ProbeColdSstore4": {
+        "gas": 156899,
+        "samples": [
+          156899,
+          156899,
+          156899
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 4,
+        "endpoint": "api.avax-test.network"
+      },
+      "ProbeColdSstore8": {
+        "gas": 247587,
+        "samples": [
+          247587,
+          247587,
+          247587
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 8,
+        "endpoint": "api.avax-test.network"
+      },
+      "ProbeColdSstore16": {
+        "gas": 426485,
+        "samples": [
+          426485,
+          426485,
+          426485
+        ],
+        "stable": true,
+        "class": "cold SSTORE",
+        "n": 16,
+        "endpoint": "api.avax-test.network"
+      },
+      "ProbeWarmSstore4": {
+        "gas": 90074,
+        "samples": [
+          90074,
+          90074,
+          90074
+        ],
+        "stable": true,
+        "class": "warm SSTORE",
+        "n": 4,
+        "endpoint": "api.avax-test.network"
+      },
+      "ProbeWarmSstore16": {
+        "gas": 92986,
+        "samples": [
+          92986,
+          92986,
+          92986
+        ],
+        "stable": true,
+        "class": "warm SSTORE",
+        "n": 16,
+        "endpoint": "api.avax-test.network"
+      },
+      "ProbeColdSload8": {
+        "gas": 107909,
+        "samples": [
+          107909,
+          107909,
+          107909
+        ],
+        "stable": true,
+        "class": "cold SLOAD",
+        "n": 8,
+        "endpoint": "api.avax-test.network"
+      },
+      "ProbeColdSload32": {
+        "gas": 160123,
+        "samples": [
+          160123,
+          160123,
+          160123
+        ],
+        "stable": true,
+        "class": "cold SLOAD",
+        "n": 32,
+        "endpoint": "api.avax-test.network"
+      },
+      "ProbeLog4": {
+        "gas": 72488,
+        "samples": [
+          72488,
+          72488,
+          72488
+        ],
+        "stable": true,
+        "class": "LOG1",
+        "n": 4,
+        "endpoint": "api.avax-test.network"
+      },
+      "ProbeLog16": {
+        "gas": 85222,
+        "samples": [
+          85222,
+          85222,
+          85222
+        ],
+        "stable": true,
+        "class": "LOG1",
+        "n": 16,
+        "endpoint": "api.avax-test.network"
+      },
+      "ProbeColdAccount8": {
+        "gas": 111961,
+        "samples": [
+          111961,
+          111961,
+          111961
+        ],
+        "stable": true,
+        "class": "cold account",
+        "n": 8,
+        "endpoint": "api.avax-test.network"
+      },
+      "ProbeColdAccount32": {
+        "gas": 177502,
+        "samples": [
+          177502,
+          177502,
+          177502
+        ],
+        "stable": true,
+        "class": "cold account",
+        "n": 32,
+        "endpoint": "api.avax-test.network"
+      },
+      "ProbeKeccak64": {
+        "gas": 96856,
+        "samples": [
+          96856,
+          96856,
+          96856
+        ],
+        "stable": true,
+        "class": "compute (control)",
+        "n": 64,
+        "endpoint": "api.avax-test.network"
+      },
+      "ProbeMemory": {
+        "gas": 91063,
+        "samples": [
+          91063,
+          91063,
+          91063
+        ],
+        "stable": true,
+        "class": "memory (control)",
+        "n": 1,
+        "endpoint": "api.avax-test.network"
+      }
+    }
+  },
+  "deltaVsBaseline": {
+    "Optimism Sepolia": {
+      "ProbeBaseline": {
+        "delta": 0,
+        "class": "baseline",
+        "n": 0
+      },
+      "ProbeColdSstore1": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 1
+      },
+      "ProbeColdSstore2": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 2
+      },
+      "ProbeColdSstore8": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 8
+      },
+      "ProbeColdSstore16": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 16
+      },
+      "ProbeWarmSstore4": {
+        "delta": 0,
+        "class": "warm SSTORE",
+        "n": 4
+      },
+      "ProbeWarmSstore16": {
+        "delta": 0,
+        "class": "warm SSTORE",
+        "n": 16
+      },
+      "ProbeColdSload8": {
+        "delta": 0,
+        "class": "cold SLOAD",
+        "n": 8
+      },
+      "ProbeLog4": {
+        "delta": 0,
+        "class": "LOG1",
+        "n": 4
+      },
+      "ProbeLog16": {
+        "delta": 0,
+        "class": "LOG1",
+        "n": 16
+      },
+      "ProbeColdAccount8": {
+        "delta": 0,
+        "class": "cold account",
+        "n": 8
+      },
+      "ProbeKeccak64": {
+        "delta": 0,
+        "class": "compute (control)",
+        "n": 64
+      },
+      "ProbeMemory": {
+        "delta": 0,
+        "class": "memory (control)",
+        "n": 1
+      }
+    },
+    "Base Sepolia": {
+      "ProbeBaseline": {
+        "delta": 0,
+        "class": "baseline",
+        "n": 0
+      },
+      "ProbeColdSstore1": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 1
+      },
+      "ProbeColdSstore2": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 2
+      },
+      "ProbeColdSstore8": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 8
+      },
+      "ProbeColdSstore16": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 16
+      },
+      "ProbeWarmSstore4": {
+        "delta": 0,
+        "class": "warm SSTORE",
+        "n": 4
+      },
+      "ProbeWarmSstore16": {
+        "delta": 0,
+        "class": "warm SSTORE",
+        "n": 16
+      },
+      "ProbeColdSload8": {
+        "delta": 0,
+        "class": "cold SLOAD",
+        "n": 8
+      },
+      "ProbeLog4": {
+        "delta": 0,
+        "class": "LOG1",
+        "n": 4
+      },
+      "ProbeLog16": {
+        "delta": 0,
+        "class": "LOG1",
+        "n": 16
+      },
+      "ProbeColdAccount8": {
+        "delta": 0,
+        "class": "cold account",
+        "n": 8
+      },
+      "ProbeKeccak64": {
+        "delta": 0,
+        "class": "compute (control)",
+        "n": 64
+      },
+      "ProbeMemory": {
+        "delta": 0,
+        "class": "memory (control)",
+        "n": 1
+      }
+    },
+    "Arbitrum Sepolia": {
+      "ProbeBaseline": {
+        "delta": 260,
+        "class": "baseline",
+        "n": 0
+      },
+      "ProbeColdSstore1": {
+        "delta": 271,
+        "class": "cold SSTORE",
+        "n": 1
+      },
+      "ProbeColdSstore2": {
+        "delta": 277,
+        "class": "cold SSTORE",
+        "n": 2
+      },
+      "ProbeColdSstore8": {
+        "delta": 323,
+        "class": "cold SSTORE",
+        "n": 8
+      },
+      "ProbeColdSstore16": {
+        "delta": 375,
+        "class": "cold SSTORE",
+        "n": 16
+      },
+      "ProbeWarmSstore4": {
+        "delta": 274,
+        "class": "warm SSTORE",
+        "n": 4
+      },
+      "ProbeWarmSstore16": {
+        "delta": 306,
+        "class": "warm SSTORE",
+        "n": 16
+      },
+      "ProbeColdSload8": {
+        "delta": 309,
+        "class": "cold SLOAD",
+        "n": 8
+      },
+      "ProbeLog4": {
+        "delta": 296,
+        "class": "LOG1",
+        "n": 4
+      },
+      "ProbeLog16": {
+        "delta": 300,
+        "class": "LOG1",
+        "n": 16
+      },
+      "ProbeColdAccount8": {
+        "delta": 308,
+        "class": "cold account",
+        "n": 8
+      },
+      "ProbeKeccak64": {
+        "delta": 311,
+        "class": "compute (control)",
+        "n": 64
+      },
+      "ProbeMemory": {
+        "delta": 281,
+        "class": "memory (control)",
+        "n": 1
+      }
+    },
+    "Polygon Amoy": {
+      "ProbeBaseline": {
+        "delta": 0,
+        "class": "baseline",
+        "n": 0
+      },
+      "ProbeColdSstore1": {
+        "delta": 844,
+        "class": "cold SSTORE",
+        "n": 1
+      },
+      "ProbeColdSstore2": {
+        "delta": 1687,
+        "class": "cold SSTORE",
+        "n": 2
+      },
+      "ProbeColdSstore8": {
+        "delta": 6773,
+        "class": "cold SSTORE",
+        "n": 8
+      },
+      "ProbeColdSstore16": {
+        "delta": 13547,
+        "class": "cold SSTORE",
+        "n": 16
+      },
+      "ProbeWarmSstore4": {
+        "delta": 843,
+        "class": "warm SSTORE",
+        "n": 4
+      },
+      "ProbeWarmSstore16": {
+        "delta": 843,
+        "class": "warm SSTORE",
+        "n": 16
+      },
+      "ProbeColdSload8": {
+        "delta": 27830,
+        "class": "cold SLOAD",
+        "n": 8
+      },
+      "ProbeLog4": {
+        "delta": 0,
+        "class": "LOG1",
+        "n": 4
+      },
+      "ProbeLog16": {
+        "delta": 0,
+        "class": "LOG1",
+        "n": 16
+      },
+      "ProbeColdAccount8": {
+        "delta": 843,
+        "class": "cold account",
+        "n": 8
+      },
+      "ProbeKeccak64": {
+        "delta": 844,
+        "class": "compute (control)",
+        "n": 64
+      }
+    },
+    "BSC Testnet": {
+      "ProbeBaseline": {
+        "delta": 0,
+        "class": "baseline",
+        "n": 0
+      },
+      "ProbeColdSstore1": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 1
+      },
+      "ProbeColdSstore2": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 2
+      },
+      "ProbeColdSstore8": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 8
+      },
+      "ProbeColdSstore16": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 16
+      },
+      "ProbeWarmSstore4": {
+        "delta": 0,
+        "class": "warm SSTORE",
+        "n": 4
+      },
+      "ProbeWarmSstore16": {
+        "delta": 0,
+        "class": "warm SSTORE",
+        "n": 16
+      },
+      "ProbeColdSload8": {
+        "delta": 0,
+        "class": "cold SLOAD",
+        "n": 8
+      },
+      "ProbeLog4": {
+        "delta": 0,
+        "class": "LOG1",
+        "n": 4
+      },
+      "ProbeLog16": {
+        "delta": 0,
+        "class": "LOG1",
+        "n": 16
+      },
+      "ProbeColdAccount8": {
+        "delta": 0,
+        "class": "cold account",
+        "n": 8
+      },
+      "ProbeKeccak64": {
+        "delta": 0,
+        "class": "compute (control)",
+        "n": 64
+      },
+      "ProbeMemory": {
+        "delta": 0,
+        "class": "memory (control)",
+        "n": 1
+      }
+    },
+    "Avalanche Fuji": {
+      "ProbeBaseline": {
+        "delta": 0,
+        "class": "baseline",
+        "n": 0
+      },
+      "ProbeColdSstore1": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 1
+      },
+      "ProbeColdSstore2": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 2
+      },
+      "ProbeColdSstore8": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 8
+      },
+      "ProbeColdSstore16": {
+        "delta": 0,
+        "class": "cold SSTORE",
+        "n": 16
+      },
+      "ProbeWarmSstore4": {
+        "delta": 0,
+        "class": "warm SSTORE",
+        "n": 4
+      },
+      "ProbeWarmSstore16": {
+        "delta": 0,
+        "class": "warm SSTORE",
+        "n": 16
+      },
+      "ProbeColdSload8": {
+        "delta": 0,
+        "class": "cold SLOAD",
+        "n": 8
+      },
+      "ProbeLog4": {
+        "delta": 0,
+        "class": "LOG1",
+        "n": 4
+      },
+      "ProbeLog16": {
+        "delta": 0,
+        "class": "LOG1",
+        "n": 16
+      },
+      "ProbeColdAccount8": {
+        "delta": 0,
+        "class": "cold account",
+        "n": 8
+      },
+      "ProbeKeccak64": {
+        "delta": 0,
+        "class": "compute (control)",
+        "n": 64
+      },
+      "ProbeMemory": {
+        "delta": 0,
+        "class": "memory (control)",
+        "n": 1
+      }
+    }
+  }
+}

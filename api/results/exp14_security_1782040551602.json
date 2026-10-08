@@ -1,0 +1,106 @@
+{
+  "experiment": "exp14_security",
+  "timestamp": "2026-06-21T11:15:51.600Z",
+  "passed": 16,
+  "total": 16,
+  "score": "100.0%",
+  "rateLimitingAdded": true,
+  "tests": [
+    {
+      "name": "Access without token",
+      "category": "Auth",
+      "pass": true,
+      "detail": "HTTP 401 (expect 401)"
+    },
+    {
+      "name": "Invalid token",
+      "category": "Auth",
+      "pass": true,
+      "detail": "HTTP 401 (expect 401)"
+    },
+    {
+      "name": "Tampered JWT payload",
+      "category": "Auth",
+      "pass": true,
+      "detail": "HTTP 401 (expect 401)"
+    },
+    {
+      "name": "Malformed Bearer prefix",
+      "category": "Auth",
+      "pass": true,
+      "detail": "HTTP 401 (expect 401)"
+    },
+    {
+      "name": "Valid token grants access",
+      "category": "Auth",
+      "pass": true,
+      "detail": "HTTP 200 (expect 200)"
+    },
+    {
+      "name": "SQL injection in login",
+      "category": "Injection",
+      "pass": true,
+      "detail": "HTTP 401 (expect 401, no auth)"
+    },
+    {
+      "name": "Missing required fields",
+      "category": "Validation",
+      "pass": true,
+      "detail": "HTTP 400 (expect 400)"
+    },
+    {
+      "name": "X-Content-Type-Options",
+      "category": "Headers",
+      "pass": true,
+      "detail": "value: nosniff"
+    },
+    {
+      "name": "X-Frame-Options",
+      "category": "Headers",
+      "pass": true,
+      "detail": "value: SAMEORIGIN"
+    },
+    {
+      "name": "X-XSS-Protection",
+      "category": "Headers",
+      "pass": true,
+      "detail": "present: true"
+    },
+    {
+      "name": "X-Powered-By hidden",
+      "category": "Headers",
+      "pass": true,
+      "detail": "present: false"
+    },
+    {
+      "name": "Content-Security-Policy",
+      "category": "Headers",
+      "pass": true,
+      "detail": "present: true"
+    },
+    {
+      "name": "Brute-force rate limiting",
+      "category": "Rate Limit",
+      "pass": true,
+      "detail": "429 returned after repeated failed logins"
+    },
+    {
+      "name": "Strict-Transport-Security",
+      "category": "Headers",
+      "pass": true,
+      "detail": "present: true"
+    },
+    {
+      "name": "CORS origin restricted",
+      "category": "Headers",
+      "pass": true,
+      "detail": "ACAO: https://realshare.example"
+    },
+    {
+      "name": "Oversized body rejected",
+      "category": "Validation",
+      "pass": true,
+      "detail": "HTTP 413 (expect 413)"
+    }
+  ]
+}

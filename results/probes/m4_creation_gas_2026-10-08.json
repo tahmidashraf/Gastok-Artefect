@@ -1,0 +1,35 @@
+{
+  "experiment": "M4 creation gas of the neutral benchmark contracts (paper Section V-C)",
+  "method": "eth_call gas-cap bisection (scripts/probes/m4_creation_gas.js); no funds, no deployment",
+  "recorded": "2026-10-08",
+  "note": "Recorded after artefact.zip (SHA-256 83c6e1c8...dbe514) was sealed, because the archive ships the M4 script but not its output. Ethereum-schedule values come from the in-process Hardhat EVM: the public Sepolia endpoint used by the script does not enforce the eth_call gas cap, the failure mode documented in scripts/experiments/exp_gas_fingerprint_exact2.mjs.",
+  "polygon_amoy": {
+    "endpoint": "https://polygon-amoy-bor-rpc.publicnode.com",
+    "block": 49606569,
+    "gas": {
+      "A_1155  BenchERC1155": 1358276,
+      "A_20    BenchERC20Factory": 977874,
+      "D_20    BenchERC20 (standalone)": 704574
+    }
+  },
+  "ethereum_schedule": {
+    "endpoint": "Hardhat in-process EVM (Ethereum schedule)",
+    "hardfork": "osaka",
+    "solc": "0.8.27",
+    "gas": {
+      "A_1155  BenchERC1155": 1351556,
+      "A_20    BenchERC20Factory": 977874,
+      "D_20    BenchERC20 (standalone)": 694494
+    }
+  },
+  "difference_amoy_minus_ethereum": {
+    "A_1155  BenchERC1155": 6720,
+    "A_20    BenchERC20Factory": 0,
+    "D_20    BenchERC20 (standalone)": 10080
+  },
+  "difference_in_cold_SSTORE_units_of_840": {
+    "A_1155  BenchERC1155": 8.0,
+    "A_20    BenchERC20Factory": 0.0,
+    "D_20    BenchERC20 (standalone)": 12.0
+  }
+}

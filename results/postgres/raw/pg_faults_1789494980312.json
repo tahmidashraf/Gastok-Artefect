@@ -1,0 +1,147 @@
+{
+  "experiment": "pg_normal_and_faults",
+  "timestamp": "2026-09-15T17:56:11.042Z",
+  "env": {
+    "pg": "PostgreSQL 18 (embedded-postgres)",
+    "os": "Windows_NT 10.0.26200 x64",
+    "cpu": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+    "node": "v18.14.0",
+    "driver": "pg 8.x"
+  },
+  "scenarios": [
+    {
+      "no": 1,
+      "name": "Normal: mint event updates balance",
+      "expected": 100,
+      "actual": 100,
+      "pass": true
+    },
+    {
+      "no": 2,
+      "name": "Normal: transfer updates sender+recipient atomically",
+      "pass": true,
+      "actual": "A=70 B=30"
+    },
+    {
+      "no": 3,
+      "name": "Normal: duplicate event ignored (idempotent)",
+      "pass": true,
+      "actual": "duplicate=true"
+    },
+    {
+      "no": 4,
+      "name": "Normal: checkpoint persists and resumes",
+      "pass": true,
+      "actual": 500
+    },
+    {
+      "no": 5,
+      "name": "Normal: reconciliation confirms agreement",
+      "pass": true,
+      "actual": "mismatches=0"
+    },
+    {
+      "no": 6,
+      "name": "Normal: audit log records entries",
+      "pass": true,
+      "actual": "audit rows 1"
+    },
+    {
+      "no": 7,
+      "name": "Fault: failure mid-transaction rolls back (no partial write)",
+      "pass": true,
+      "actual": "threw=true bal=50",
+      "recoveryMs": 37
+    },
+    {
+      "no": 8,
+      "name": "Fault: explicit ROLLBACK discards changes",
+      "pass": true,
+      "actual": "rows=0",
+      "recoveryMs": 2
+    },
+    {
+      "no": 9,
+      "name": "Fault: UNIQUE constraint violation raised (23505)",
+      "pass": true,
+      "actual": "caught=true",
+      "recoveryMs": 1
+    },
+    {
+      "no": 10,
+      "name": "Fault: deadlock detected by PostgreSQL (40P01)",
+      "pass": true,
+      "actual": "deadlock=true",
+      "recoveryMs": 1136
+    },
+    {
+      "no": 11,
+      "name": "Fault: lock timeout raised (55P03)",
+      "pass": true,
+      "actual": "timedOut=true",
+      "recoveryMs": 318
+    },
+    {
+      "no": 12,
+      "name": "Fault: 50 concurrent credits to one holding are serialised correctly",
+      "pass": true,
+      "actual": "bal=50 (expect 50)",
+      "recoveryMs": 175
+    },
+    {
+      "no": 13,
+      "name": "Fault: crash-after-commit retry does not double-apply",
+      "pass": true,
+      "actual": "dup=true bal=40"
+    },
+    {
+      "no": 14,
+      "name": "Fault: connection-pool exhaustion (acquire times out)",
+      "pass": true,
+      "actual": "exhausted=true",
+      "recoveryMs": 879
+    },
+    {
+      "no": 15,
+      "name": "Fault: connection to unavailable server fails cleanly",
+      "pass": true,
+      "actual": "failed=true"
+    },
+    {
+      "no": 16,
+      "name": "Fault: REAL PostgreSQL server stop/start; state durable, resumes",
+      "emulated": false,
+      "pass": true,
+      "actual": "downErr=true balAfterRestart=25",
+      "recoveryMs": 892
+    },
+    {
+      "no": 17,
+      "name": "Recovery: dead-letter then manual replay applies once",
+      "pass": true,
+      "actual": "dlq=1 bal=15",
+      "recoveryMs": 84
+    },
+    {
+      "no": 18,
+      "name": "Recovery: reconciliation detects + repairs corruption",
+      "pass": true,
+      "actual": "detected=1 repaired=1 residual=0 bal=100",
+      "recoveryMs": 40
+    },
+    {
+      "no": 19,
+      "name": "Recovery: 3 concurrent listeners apply the event exactly once",
+      "pass": true,
+      "actual": "applied=1 bal=60",
+      "recoveryMs": 89
+    }
+  ],
+  "metrics": {
+    "scenarios": 19,
+    "passed": 19,
+    "failed": 0,
+    "processingSuccessRate": 1,
+    "meanRecoveryMs": 332
+  }
+}

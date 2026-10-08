@@ -1,0 +1,120 @@
+{
+  "experiment": "estimate_gas_validation",
+  "timestamp": "2026-09-14T17:27:55.506Z",
+  "claim": "eth_estimateGas returns exact execution gas, equal to local receipt gasUsed under the same (Ethereum) schedule",
+  "exactAgreement": "0/0",
+  "rows": [
+    {
+      "probe": "ProbeBaseline",
+      "localHardhatGasUsed": 66854,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeColdSstore1",
+      "localHardhatGasUsed": 89081,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeColdSstore2",
+      "localHardhatGasUsed": 111288,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeColdSstore4",
+      "localHardhatGasUsed": 155698,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeColdSstore8",
+      "localHardhatGasUsed": 244479,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeColdSstore16",
+      "localHardhatGasUsed": 421957,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeWarmSstore4",
+      "localHardhatGasUsed": 89137,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeWarmSstore16",
+      "localHardhatGasUsed": 92038,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeColdSload8",
+      "localHardhatGasUsed": 106902,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeColdSload32",
+      "localHardhatGasUsed": 158910,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeLog4",
+      "localHardhatGasUsed": 71621,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeLog16",
+      "localHardhatGasUsed": 84317,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeColdAccount8",
+      "localHardhatGasUsed": 110926,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeColdAccount32",
+      "localHardhatGasUsed": 174946,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeKeccak64",
+      "localHardhatGasUsed": 95893,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeMemory",
+      "localHardhatGasUsed": 90122,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    }
+  ]
+}

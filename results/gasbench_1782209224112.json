@@ -1,0 +1,102 @@
+{
+  "deploy": {
+    "erc1155": 1918983
+  },
+  "workflow": {
+    "listCold": 96571,
+    "listWarm": 96583,
+    "kyc": 47316,
+    "mint100": 81086,
+    "mint50": 81098,
+    "transfer20": 64070,
+    "deactivate": 30070
+  },
+  "minting": {
+    "mint1": 81086,
+    "mint10": 46886,
+    "mint50": 46886,
+    "mint100": 46886,
+    "mint500": 46898,
+    "transfer1": 64070,
+    "transfer10": 46970,
+    "transfer50": 46970
+  },
+  "stdcmp": {
+    "erc1155": {
+      "deploy": 1918983,
+      "mint1": 83586,
+      "mint10": 83586,
+      "mint50": 83574
+    },
+    "erc721": {
+      "deploy": 1106852,
+      "mint1": 95490,
+      "mint10": 306297,
+      "mint50": 1319217
+    },
+    "erc20": {
+      "deploy": 653470,
+      "mint1": 72750,
+      "mint10": 55650,
+      "mint50": 55650
+    }
+  },
+  "tps": [
+    {
+      "batch": 10,
+      "elapsedMs": 17,
+      "tps": 588,
+      "avgGas": 68194
+    },
+    {
+      "batch": 25,
+      "elapsedMs": 38,
+      "tps": 658,
+      "avgGas": 66485
+    },
+    {
+      "batch": 50,
+      "elapsedMs": 77,
+      "tps": 649,
+      "avgGas": 66485
+    },
+    {
+      "batch": 100,
+      "elapsedMs": 146,
+      "tps": 685,
+      "avgGas": 66485
+    },
+    {
+      "batch": 200,
+      "elapsedMs": 313,
+      "tps": 639,
+      "avgGas": 66484
+    }
+  ],
+  "batchTransfer": {
+    "k": 5,
+    "individualGas": 320398,
+    "batchGas": 192416,
+    "savingPct": 39.9
+  },
+  "batch": [
+    {
+      "properties": 2,
+      "individualGas": 167184,
+      "batchGas": 139096,
+      "savingPct": 16.8
+    },
+    {
+      "properties": 3,
+      "individualGas": 250782,
+      "batchGas": 191620,
+      "savingPct": 23.6
+    },
+    {
+      "properties": 5,
+      "individualGas": 417978,
+      "batchGas": 296678,
+      "savingPct": 29
+    }
+  ]
+}

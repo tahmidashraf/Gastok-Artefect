@@ -1,0 +1,46 @@
+{
+  "experiment": "live_session_lite",
+  "tag": "s2",
+  "network": "polygonAmoy",
+  "chainId": 80002,
+  "contract": "0x40aBAe00C9308159e66Bf86fCF6E33df175732AE",
+  "wallet": "0x71C59a35b79A18b0A44540501cB900761DC32fD0",
+  "gasPriceWei": "35075000066",
+  "startBalance": "1728229792942940",
+  "timestamp": "2026-07-15T03:10:08.566Z",
+  "operations": [
+    {
+      "label": "listProperty",
+      "skipped": true,
+      "reason": "insufficient residual balance"
+    },
+    {
+      "label": "approveKYC",
+      "skipped": true,
+      "reason": "insufficient residual balance"
+    },
+    {
+      "label": "mintFractions",
+      "skipped": true,
+      "reason": "insufficient residual balance"
+    },
+    {
+      "label": "approveKYC(self)",
+      "skipped": true,
+      "reason": "insufficient residual balance"
+    },
+    {
+      "label": "mintFractions#2",
+      "skipped": true,
+      "reason": "insufficient residual balance"
+    },
+    {
+      "label": "safeTransfer",
+      "skipped": true,
+      "reason": "insufficient residual balance"
+    }
+  ],
+  "endBalance": "1728229792942940",
+  "spentWei": "0",
+  "confirmedCount": 0
+}

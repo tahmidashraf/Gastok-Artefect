@@ -1,0 +1,10 @@
+{
+  "contract": "ModelRegistry",
+  "deployGas": 262038,
+  "anchorFirstGas": 91871,
+  "anchorSubsequentGas": 74771,
+  "gwei": 30,
+  "note": "Per-round anchoring is a single bounded write; cost is independent of model size (only a 32-byte hash is stored).",
+  "anchorCostPOL": 0.002243,
+  "deployCostPOL": 0.007861
+}

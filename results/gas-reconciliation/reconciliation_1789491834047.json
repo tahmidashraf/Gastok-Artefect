@@ -1,0 +1,29 @@
+{
+  "experiment": "gas_reconciliation",
+  "timestamp": "2026-09-15T17:03:54.047Z",
+  "note": "isolates contract-under-test, balance-slot state, recipient-account state and calldata",
+  "measured": {
+    "A_cold_warmAccount_amount1": 81086,
+    "B_warm_warmAccount_amount10": 46886,
+    "B_warm_warmAccount_amount500": 46898,
+    "C_cold_coldAccount_amount1": 83586,
+    "D_cold_warmAccount_amount10000": 81098,
+    "E_bench_cold_warmAccount_amount1": 50091,
+    "E_bench_cold_coldAccount_amount1": 52603
+  },
+  "deltas": {
+    "coldToWarmBalanceSlot": 34200,
+    "coldRecipientAccountSurcharge": 2500,
+    "calldataAmount1To10000": 12,
+    "productionGuardOverhead": 30995
+  },
+  "publishedFigures": {
+    "Exp 2, mint 1 fraction (Table IV)": 81086,
+    "Exp 2, mint 10/50/100 fractions (Table IV)": 46886,
+    "Exp 3, ERC-1155 mint 1/10/50 (Table V)": 83586,
+    "Exp 11 Benchmark A, ERC-1155 (flat)": 52591,
+    "Exp 4, Sepolia mintFractions (Table X)": 81098,
+    "Exp 4, Amoy mintFractions (Table X)": 101258
+  },
+  "reproducedExactly": "3/4"
+}

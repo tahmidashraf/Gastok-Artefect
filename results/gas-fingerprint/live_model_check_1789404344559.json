@@ -1,0 +1,36 @@
+{
+  "experiment": "live_out_of_sample_model_check",
+  "timestamp": "2026-09-14T16:45:44.559Z",
+  "contract": "0x40aBAe00C9308159e66Bf86fCF6E33df175732AE",
+  "model": {
+    "coldSloadAccess": 3360,
+    "coldSstoreAccess": 840
+  },
+  "note": "coefficients fitted on synthetic probes only; these are real application calls on the deployed contract",
+  "rows": [
+    {
+      "call": "approveKYC(fresh)",
+      "sepolia": 47316,
+      "amoy": 54036,
+      "observedDelta": 6720,
+      "predicted": 6720,
+      "exact": true,
+      "counts": {
+        "coldSload": 2,
+        "coldSstore": 0
+      }
+    },
+    {
+      "call": "listProperty(new)",
+      "sepolia": 96693,
+      "amoy": 108453,
+      "observedDelta": 11760,
+      "predicted": 11760,
+      "exact": true,
+      "counts": {
+        "coldSload": 3,
+        "coldSstore": 2
+      }
+    }
+  ]
+}

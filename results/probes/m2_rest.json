@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Ethereum mainnet",
+    "chainId": 1,
+    "block": 26039546,
+    "reset_n1": 2906,
+    "reset_n4": 11624,
+    "perWrite": 2906,
+    "deltaVsEthereum": 0,
+    "repricesResets": "no"
+  },
+  {
+    "name": "Optimism mainnet",
+    "chainId": 10,
+    "block": 157280036,
+    "reset_n1": 2906,
+    "reset_n4": 11624,
+    "perWrite": 2906,
+    "deltaVsEthereum": 0,
+    "repricesResets": "no"
+  },
+  {
+    "name": "Optimism Sepolia",
+    "chainId": 11155420,
+    "block": 49178154,
+    "reset_n1": 2906,
+    "reset_n4": 11624,
+    "perWrite": 2906,
+    "deltaVsEthereum": 0,
+    "repricesResets": "no"
+  },
+  {
+    "name": "Base mainnet",
+    "chainId": 8453,
+    "block": 51684751,
+    "reset_n1": 2906,
+    "reset_n4": 11624,
+    "perWrite": 2906,
+    "deltaVsEthereum": 0,
+    "repricesResets": "no"
+  },
+  {
+    "name": "Base Sepolia",
+    "chainId": 84532,
+    "block": 47195280,
+    "reset_n1": 2906,
+    "reset_n4": 11624,
+    "perWrite": 2906,
+    "deltaVsEthereum": 0,
+    "repricesResets": "no"
+  },
+  {
+    "name": "BNB mainnet",
+    "chainId": 56,
+    "block": 123548068,
+    "reset_n1": 2906,
+    "reset_n4": 11624,
+    "perWrite": 2906,
+    "deltaVsEthereum": 0,
+    "repricesResets": "no"
+  },
+  {
+    "name": "BNB testnet",
+    "chainId": 97,
+    "block": 132693163,
+    "reset_n1": 2906,
+    "reset_n4": 11624,
+    "perWrite": 2906,
+    "deltaVsEthereum": 0,
+    "repricesResets": "no"
+  }
+]

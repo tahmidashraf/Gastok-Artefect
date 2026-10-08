@@ -1,0 +1,30 @@
+{
+  "experiment": "polygon_repricing_decomposition",
+  "timestamp": "2026-09-14T17:28:52.696Z",
+  "rows": [
+    {
+      "probe": "ProbeColdSstore1",
+      "local": 89081,
+      "polygon": 89921,
+      "delta": 840
+    },
+    {
+      "probe": "ProbeColdSload8",
+      "local": 106902,
+      "polygon": 134622,
+      "delta": 27720
+    },
+    {
+      "probe": "ProbeSloadThenSstore1",
+      "local": 89144,
+      "polygon": 92504,
+      "delta": 3360
+    },
+    {
+      "probe": "ProbeSloadThenSstore4",
+      "local": 156258,
+      "polygon": 169698,
+      "delta": 13440
+    }
+  ]
+}

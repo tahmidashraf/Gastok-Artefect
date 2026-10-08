@@ -1,0 +1,130 @@
+{
+  "experiment": "adversarial_contract_tests",
+  "timestamp": "2026-07-15T02:46:53.410Z",
+  "cases": [
+    {
+      "name": "stranger listProperty",
+      "category": "access-control",
+      "expected": "revert",
+      "passed": true,
+      "detail": "onlyOwner"
+    },
+    {
+      "name": "stranger approveKYC",
+      "category": "access-control",
+      "expected": "revert",
+      "passed": true,
+      "detail": "onlyOwner"
+    },
+    {
+      "name": "stranger mintFractions",
+      "category": "access-control",
+      "expected": "revert",
+      "passed": true,
+      "detail": "onlyOwner"
+    },
+    {
+      "name": "former owner mint after transfer",
+      "category": "access-control",
+      "expected": "revert",
+      "passed": true,
+      "detail": "Ownable transfer revokes old owner"
+    },
+    {
+      "name": "stranger revokeKYC",
+      "category": "access-control",
+      "expected": "revert",
+      "passed": true,
+      "detail": "onlyOwner"
+    },
+    {
+      "name": "mint to non-KYC",
+      "category": "kyc-gate",
+      "expected": "revert",
+      "passed": true,
+      "detail": "require(kycApproved[to])"
+    },
+    {
+      "name": "mint beyond cap",
+      "category": "supply-cap",
+      "expected": "revert",
+      "passed": true,
+      "detail": "minted+amount<=totalFractions"
+    },
+    {
+      "name": "mint on deactivated property",
+      "category": "state-guard",
+      "expected": "revert",
+      "passed": true,
+      "detail": "require(active)"
+    },
+    {
+      "name": "transfer to non-KYC",
+      "category": "kyc-gate",
+      "expected": "revert",
+      "passed": true,
+      "detail": "_update KYC check on recipient"
+    },
+    {
+      "name": "revoked sender transfer",
+      "category": "kyc-gate",
+      "expected": "revert",
+      "passed": true,
+      "detail": "_update KYC check on sender"
+    },
+    {
+      "name": "duplicate property id",
+      "category": "state-guard",
+      "expected": "revert",
+      "passed": true,
+      "detail": "require(!listed)"
+    },
+    {
+      "name": "zero-supply property",
+      "category": "input-validation",
+      "expected": "revert",
+      "passed": true,
+      "detail": "require(totalFractions>0)"
+    },
+    {
+      "name": "re-entry on receive (transfer)",
+      "category": "reentrancy",
+      "expected": "attempted but never succeeds",
+      "passed": true,
+      "detail": "attempts=1, reentered=false"
+    },
+    {
+      "name": "re-entry mint on receive",
+      "category": "reentrancy",
+      "expected": "attempted, blocked by onlyOwner",
+      "passed": true,
+      "detail": "attempts=1, reentered=false"
+    },
+    {
+      "name": "bad selector receiver",
+      "category": "receiver-check",
+      "expected": "revert (tokens not credited)",
+      "passed": true,
+      "detail": "ERC1155 acceptance check"
+    },
+    {
+      "name": "forced revert receiver",
+      "category": "atomicity",
+      "expected": "revert, balance unchanged",
+      "passed": true,
+      "detail": "atomic revert"
+    },
+    {
+      "name": "supply conservation invariant",
+      "category": "invariant",
+      "expected": "sum(balances)==minted<=cap",
+      "passed": true,
+      "detail": "sum=495, minted=495, cap=1000"
+    }
+  ],
+  "summary": {
+    "total": 17,
+    "passed": 17,
+    "failed": 0
+  }
+}

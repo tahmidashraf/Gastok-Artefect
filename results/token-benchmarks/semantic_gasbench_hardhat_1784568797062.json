@@ -1,0 +1,335 @@
+{
+  "experiment": "semantic_gasbench",
+  "network": "hardhat",
+  "env": {
+    "solc": "0.8.27",
+    "optimizer": true,
+    "optimizerRuns": 200,
+    "evm": "cancun",
+    "openzeppelin": "5.0.2",
+    "note": "versions from hardhat.config.js + package.json"
+  },
+  "timestamp": 1784568797062,
+  "deploy": {
+    "erc1155": {
+      "gas": 1351556,
+      "bytecodeBytes": 5748
+    },
+    "erc721": {
+      "gas": 1183797,
+      "bytecodeBytes": 4867
+    },
+    "erc20_perProperty": {
+      "gas": 694386,
+      "bytecodeBytes": 2581
+    },
+    "erc20_factory": {
+      "gas": 977874,
+      "bytecodeBytes": 4277
+    }
+  },
+  "W1_amount_amortization": {
+    "note": "one id, one recipient; total gas is flat in amount (single balance write)",
+    "rows": [
+      {
+        "amount": 1,
+        "gas": 35503,
+        "gasPerUnit": 35503,
+        "calldataBytes": 100,
+        "state": "warm"
+      },
+      {
+        "amount": 10,
+        "gas": 35503,
+        "gasPerUnit": 3550.3,
+        "calldataBytes": 100,
+        "state": "warm"
+      },
+      {
+        "amount": 50,
+        "gas": 35503,
+        "gasPerUnit": 710.06,
+        "calldataBytes": 100,
+        "state": "warm"
+      },
+      {
+        "amount": 100,
+        "gas": 35503,
+        "gasPerUnit": 355.03,
+        "calldataBytes": 100,
+        "state": "warm"
+      },
+      {
+        "amount": 500,
+        "gas": 35515,
+        "gasPerUnit": 71.03,
+        "calldataBytes": 100,
+        "state": "warm"
+      },
+      {
+        "amount": 1000,
+        "gas": 35515,
+        "gasPerUnit": 35.52,
+        "calldataBytes": 100,
+        "state": "warm"
+      }
+    ],
+    "coldFirstCredit": {
+      "amount": 1,
+      "gas": 52603,
+      "state": "cold slot"
+    }
+  },
+  "W2_multi_id": {
+    "note": "n distinct property ids to one recipient, native _mintBatch",
+    "rows": [
+      {
+        "ids": 1,
+        "gas": 53788,
+        "gasPerId": 53788,
+        "calldataBytes": 228
+      },
+      {
+        "ids": 2,
+        "gas": 78728,
+        "gasPerId": 39364,
+        "calldataBytes": 292
+      },
+      {
+        "ids": 5,
+        "gas": 149301,
+        "gasPerId": 29860,
+        "calldataBytes": 484
+      },
+      {
+        "ids": 10,
+        "gas": 266905,
+        "gasPerId": 26691,
+        "calldataBytes": 804
+      },
+      {
+        "ids": 20,
+        "gas": 502104,
+        "gasPerId": 25105,
+        "calldataBytes": 1444
+      },
+      {
+        "ids": 50,
+        "gas": 1207774,
+        "gasPerId": 24155,
+        "calldataBytes": 3364
+      }
+    ]
+  },
+  "W3_multi_investor": {
+    "note": "one property to N investors; ERC-1155 balances vs ERC-721 NFTs vs ERC-20",
+    "rows": [
+      {
+        "investors": 1,
+        "erc1155": {
+          "totalGas": 53921,
+          "txCount": 1,
+          "gasPerInvestor": 53921
+        },
+        "erc721": {
+          "totalGas": 94477,
+          "txCount": 1,
+          "gasPerInvestor": 94477
+        },
+        "erc20": {
+          "totalGas": 71817,
+          "txCount": 1,
+          "gasPerInvestor": 71817
+        }
+      },
+      {
+        "investors": 10,
+        "erc1155": {
+          "totalGas": 316136,
+          "txCount": 1,
+          "gasPerInvestor": 31614
+        },
+        "erc721": {
+          "totalGas": 507634,
+          "txCount": 1,
+          "gasPerInvestor": 50763
+        },
+        "erc20": {
+          "totalGas": 300132,
+          "txCount": 1,
+          "gasPerInvestor": 30013
+        }
+      },
+      {
+        "investors": 50,
+        "erc1155": {
+          "totalGas": 1481578,
+          "txCount": 1,
+          "gasPerInvestor": 29632
+        },
+        "erc721": {
+          "totalGas": 2419834,
+          "txCount": 1,
+          "gasPerInvestor": 48397
+        },
+        "erc20": {
+          "totalGas": 1314812,
+          "txCount": 1,
+          "gasPerInvestor": 26296
+        }
+      },
+      {
+        "investors": 100,
+        "erc1155": {
+          "totalGas": 2938492,
+          "txCount": 1,
+          "gasPerInvestor": 29385
+        },
+        "erc721": {
+          "totalGas": 4839572,
+          "txCount": 2,
+          "gasPerInvestor": 48396
+        },
+        "erc20": {
+          "totalGas": 2583066,
+          "txCount": 1,
+          "gasPerInvestor": 25831
+        }
+      }
+    ]
+  },
+  "W4_portfolio": {
+    "note": "P properties x N investors; includes ERC-20 per-property deploy cost",
+    "scenarios": [
+      {
+        "P": 1,
+        "N": 10,
+        "claims": 10,
+        "erc1155": {
+          "totalGas": 318547,
+          "gasPerClaim": 31855,
+          "deploys": 1
+        },
+        "erc721": {
+          "totalGas": 507634,
+          "gasPerClaim": 50763,
+          "deploys": 1
+        },
+        "erc20": {
+          "deployGas": 691227,
+          "distributeGas": 300132,
+          "totalGas": 991359,
+          "gasPerClaim": 99136,
+          "deploys": 1,
+          "txCount": 1
+        }
+      },
+      {
+        "P": 1,
+        "N": 100,
+        "claims": 100,
+        "erc1155": {
+          "totalGas": 2958915,
+          "gasPerClaim": 29589,
+          "deploys": 1
+        },
+        "erc721": {
+          "totalGas": 4839584,
+          "gasPerClaim": 48396,
+          "deploys": 1
+        },
+        "erc20": {
+          "deployGas": 674127,
+          "distributeGas": 2565978,
+          "totalGas": 3240105,
+          "gasPerClaim": 32401,
+          "deploys": 1,
+          "txCount": 1
+        }
+      },
+      {
+        "P": 10,
+        "N": 10,
+        "claims": 100,
+        "erc1155": {
+          "totalGas": 2733999,
+          "gasPerClaim": 27340,
+          "deploys": 1
+        },
+        "erc721": {
+          "totalGas": 2916668,
+          "gasPerClaim": 29167,
+          "deploys": 1
+        },
+        "erc20": {
+          "deployGas": 6741270,
+          "distributeGas": 2984220,
+          "totalGas": 9725490,
+          "gasPerClaim": 97255,
+          "deploys": 10,
+          "txCount": 10
+        }
+      },
+      {
+        "P": 10,
+        "N": 100,
+        "claims": 1000,
+        "erc1155": {
+          "totalGas": 28616327,
+          "gasPerClaim": 28616,
+          "deploys": 1
+        },
+        "erc721": {
+          "totalGas": 32769168,
+          "gasPerClaim": 32769,
+          "deploys": 1
+        },
+        "erc20": {
+          "deployGas": 6741270,
+          "distributeGas": 25659780,
+          "totalGas": 32401050,
+          "gasPerClaim": 32401,
+          "deploys": 10,
+          "txCount": 10
+        }
+      },
+      {
+        "P": 50,
+        "N": 100,
+        "claims": 5000,
+        "erc1155": {
+          "totalGas": 142853942,
+          "gasPerClaim": 28571,
+          "deploys": 1
+        },
+        "erc721": {
+          "totalGas": 156914088,
+          "gasPerClaim": 31383,
+          "deploys": 1
+        },
+        "erc20": {
+          "deployGas": 33707430,
+          "distributeGas": 128979900,
+          "totalGas": 162687330,
+          "gasPerClaim": 32537,
+          "deploys": 50,
+          "txCount": 50
+        }
+      }
+    ]
+  },
+  "throughput_corrected": {
+    "labels": "measured=local EVM; theoretical=block-gas/ (G_tx*T_block); estimated=needs live block scan",
+    "G_block": 30000000,
+    "T_block": 2,
+    "G_tx_measured": 66485,
+    "theoretical_TPS_at_100pct": 225.6,
+    "theoretical_TPS_at_utilization": {
+      "0.50": 112.8,
+      "0.60": 135.4,
+      "0.70": 157.9,
+      "0.75": 169.2
+    },
+    "note": "Corrects B2: 60-70% of 225.6 = 135.4-157.9 TPS (NOT 30-45). Empirical application capacity is [RESULT PENDING: run exp_block_availability.js]."
+  }
+}

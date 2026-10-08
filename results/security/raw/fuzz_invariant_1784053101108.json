@@ -1,0 +1,21 @@
+{
+  "experiment": "fuzz_invariant",
+  "tool": "fast-check 4.9.0",
+  "timestamp": "2026-07-14T18:17:56.398Z",
+  "properties": [
+    {
+      "name": "P1_mint_validation",
+      "runsExecuted": 12000,
+      "counterexamples": 0,
+      "invariantHeld": true,
+      "finalMinted": "998839"
+    },
+    {
+      "name": "P2_balance_conservation",
+      "sequencesExecuted": 400,
+      "violations": 0,
+      "invariantHeld": true
+    }
+  ],
+  "totalCasesExecuted": 12400
+}

@@ -1,0 +1,621 @@
+{
+  "experiment": "exp06_latency",
+  "network": "amoy_n100_rep3",
+  "runMode": "block-time-emulated (2000ms interval)",
+  "blockIntervalMs": 2000,
+  "baseChainId": "31337",
+  "nativeSymbol": "ETH",
+  "timestamp": "2026-06-25T04:00:35.953Z",
+  "txnCount": 100,
+  "statistics": {
+    "count": 100,
+    "minMs": 1964,
+    "avgMs": 2008,
+    "p50Ms": 1993,
+    "p95Ms": 2054,
+    "p99Ms": 2059,
+    "maxMs": 2062
+  },
+  "samples": [
+    {
+      "idx": 1,
+      "blockNumber": 4,
+      "latencyMs": 1969,
+      "gasUsed": "81098"
+    },
+    {
+      "idx": 2,
+      "blockNumber": 5,
+      "latencyMs": 2042,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 3,
+      "blockNumber": 6,
+      "latencyMs": 1972,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 4,
+      "blockNumber": 7,
+      "latencyMs": 2038,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 5,
+      "blockNumber": 8,
+      "latencyMs": 2030,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 6,
+      "blockNumber": 9,
+      "latencyMs": 1971,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 7,
+      "blockNumber": 10,
+      "latencyMs": 1988,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 8,
+      "blockNumber": 11,
+      "latencyMs": 2035,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 9,
+      "blockNumber": 12,
+      "latencyMs": 1975,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 10,
+      "blockNumber": 13,
+      "latencyMs": 2023,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 11,
+      "blockNumber": 14,
+      "latencyMs": 1992,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 12,
+      "blockNumber": 15,
+      "latencyMs": 2058,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 13,
+      "blockNumber": 16,
+      "latencyMs": 1989,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 14,
+      "blockNumber": 17,
+      "latencyMs": 1988,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 15,
+      "blockNumber": 18,
+      "latencyMs": 1989,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 16,
+      "blockNumber": 19,
+      "latencyMs": 2055,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 17,
+      "blockNumber": 20,
+      "latencyMs": 1991,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 18,
+      "blockNumber": 21,
+      "latencyMs": 1993,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 19,
+      "blockNumber": 22,
+      "latencyMs": 1992,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 20,
+      "blockNumber": 23,
+      "latencyMs": 2036,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 21,
+      "blockNumber": 24,
+      "latencyMs": 1996,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 22,
+      "blockNumber": 25,
+      "latencyMs": 2044,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 23,
+      "blockNumber": 26,
+      "latencyMs": 1982,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 24,
+      "blockNumber": 27,
+      "latencyMs": 1986,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 25,
+      "blockNumber": 28,
+      "latencyMs": 2037,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 26,
+      "blockNumber": 29,
+      "latencyMs": 1985,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 27,
+      "blockNumber": 30,
+      "latencyMs": 2030,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 28,
+      "blockNumber": 31,
+      "latencyMs": 1978,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 29,
+      "blockNumber": 32,
+      "latencyMs": 2045,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 30,
+      "blockNumber": 33,
+      "latencyMs": 1970,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 31,
+      "blockNumber": 34,
+      "latencyMs": 2039,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 32,
+      "blockNumber": 35,
+      "latencyMs": 1976,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 33,
+      "blockNumber": 36,
+      "latencyMs": 2059,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 34,
+      "blockNumber": 37,
+      "latencyMs": 1978,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 35,
+      "blockNumber": 38,
+      "latencyMs": 1995,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 36,
+      "blockNumber": 39,
+      "latencyMs": 2040,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 37,
+      "blockNumber": 40,
+      "latencyMs": 1993,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 38,
+      "blockNumber": 41,
+      "latencyMs": 1994,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 39,
+      "blockNumber": 42,
+      "latencyMs": 2053,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 40,
+      "blockNumber": 43,
+      "latencyMs": 1990,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 41,
+      "blockNumber": 44,
+      "latencyMs": 1989,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 42,
+      "blockNumber": 45,
+      "latencyMs": 1989,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 43,
+      "blockNumber": 46,
+      "latencyMs": 2062,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 44,
+      "blockNumber": 47,
+      "latencyMs": 1978,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 45,
+      "blockNumber": 48,
+      "latencyMs": 2043,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 46,
+      "blockNumber": 49,
+      "latencyMs": 1991,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 47,
+      "blockNumber": 50,
+      "latencyMs": 1992,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 48,
+      "blockNumber": 51,
+      "latencyMs": 1990,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 49,
+      "blockNumber": 52,
+      "latencyMs": 2054,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 50,
+      "blockNumber": 53,
+      "latencyMs": 1994,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 51,
+      "blockNumber": 54,
+      "latencyMs": 1992,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 52,
+      "blockNumber": 55,
+      "latencyMs": 1992,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 53,
+      "blockNumber": 56,
+      "latencyMs": 2054,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 54,
+      "blockNumber": 57,
+      "latencyMs": 1977,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 55,
+      "blockNumber": 58,
+      "latencyMs": 2049,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 56,
+      "blockNumber": 59,
+      "latencyMs": 1978,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 57,
+      "blockNumber": 60,
+      "latencyMs": 1986,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 58,
+      "blockNumber": 61,
+      "latencyMs": 1985,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 59,
+      "blockNumber": 62,
+      "latencyMs": 2049,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 60,
+      "blockNumber": 63,
+      "latencyMs": 1983,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 61,
+      "blockNumber": 64,
+      "latencyMs": 1988,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 62,
+      "blockNumber": 65,
+      "latencyMs": 2037,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 63,
+      "blockNumber": 66,
+      "latencyMs": 2022,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 64,
+      "blockNumber": 67,
+      "latencyMs": 1990,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 65,
+      "blockNumber": 68,
+      "latencyMs": 1990,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 66,
+      "blockNumber": 69,
+      "latencyMs": 1987,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 67,
+      "blockNumber": 70,
+      "latencyMs": 2048,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 68,
+      "blockNumber": 71,
+      "latencyMs": 2024,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 69,
+      "blockNumber": 72,
+      "latencyMs": 1987,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 70,
+      "blockNumber": 73,
+      "latencyMs": 2024,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 71,
+      "blockNumber": 74,
+      "latencyMs": 2013,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 72,
+      "blockNumber": 75,
+      "latencyMs": 1977,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 73,
+      "blockNumber": 76,
+      "latencyMs": 2029,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 74,
+      "blockNumber": 77,
+      "latencyMs": 1976,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 75,
+      "blockNumber": 78,
+      "latencyMs": 2032,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 76,
+      "blockNumber": 79,
+      "latencyMs": 1970,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 77,
+      "blockNumber": 80,
+      "latencyMs": 2045,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 78,
+      "blockNumber": 81,
+      "latencyMs": 1981,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 79,
+      "blockNumber": 82,
+      "latencyMs": 2024,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 80,
+      "blockNumber": 83,
+      "latencyMs": 2044,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 81,
+      "blockNumber": 84,
+      "latencyMs": 2007,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 82,
+      "blockNumber": 85,
+      "latencyMs": 1965,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 83,
+      "blockNumber": 86,
+      "latencyMs": 2032,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 84,
+      "blockNumber": 87,
+      "latencyMs": 2025,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 85,
+      "blockNumber": 88,
+      "latencyMs": 2027,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 86,
+      "blockNumber": 89,
+      "latencyMs": 1976,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 87,
+      "blockNumber": 90,
+      "latencyMs": 2042,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 88,
+      "blockNumber": 91,
+      "latencyMs": 1964,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 89,
+      "blockNumber": 92,
+      "latencyMs": 2040,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 90,
+      "blockNumber": 93,
+      "latencyMs": 2026,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 91,
+      "blockNumber": 94,
+      "latencyMs": 1983,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 92,
+      "blockNumber": 95,
+      "latencyMs": 2044,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 93,
+      "blockNumber": 96,
+      "latencyMs": 2016,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 94,
+      "blockNumber": 97,
+      "latencyMs": 1987,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 95,
+      "blockNumber": 98,
+      "latencyMs": 1982,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 96,
+      "blockNumber": 99,
+      "latencyMs": 2026,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 97,
+      "blockNumber": 100,
+      "latencyMs": 1984,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 98,
+      "blockNumber": 101,
+      "latencyMs": 2017,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 99,
+      "blockNumber": 102,
+      "latencyMs": 2040,
+      "gasUsed": "46898"
+    },
+    {
+      "idx": 100,
+      "blockNumber": 103,
+      "latencyMs": 1976,
+      "gasUsed": "46898"
+    }
+  ]
+}

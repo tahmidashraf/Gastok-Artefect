@@ -1,0 +1,43 @@
+{
+  "experiment": "reentrancy_call_trace",
+  "timestamp": "2026-09-15T17:19:32.623Z",
+  "realShare": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "maliciousReceiver": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+  "outerCall": "mintFractions(0, maliciousReceiver, 10)",
+  "outerStatus": 1,
+  "outerReverted": false,
+  "reentryAttempts": 1,
+  "attackSucceeded": false,
+  "receiverBalanceAfter": 10,
+  "mintedCounterAfter": 10,
+  "callFrames": "unavailable: Hardhat currently only supports the default tracer, so no tracer parameter shoul",
+  "orderedStateAndCallOps": [
+    {
+      "pc": 3084,
+      "depth": 1,
+      "op": "SSTORE"
+    },
+    {
+      "pc": 5560,
+      "depth": 1,
+      "op": "SSTORE"
+    },
+    {
+      "pc": 5118,
+      "depth": 1,
+      "op": "CALL"
+    },
+    {
+      "pc": 1210,
+      "depth": 2,
+      "op": "SSTORE"
+    },
+    {
+      "pc": 1120,
+      "depth": 2,
+      "op": "CALL"
+    }
+  ],
+  "sstoresBeforeFirstExternalCall": 2,
+  "checksEffectsInteractionsHolds": true
+}

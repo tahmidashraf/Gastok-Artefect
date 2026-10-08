@@ -1,0 +1,26 @@
+# secrets: never commit
+.env
+.env.*
+*.pem
+*.p12
+keystore/
+id_rsa*
+
+# build and dependency output
+node_modules/
+cache/
+artifacts/
+typechain/
+coverage/
+*.log
+
+# local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

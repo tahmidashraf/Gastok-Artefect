@@ -1,0 +1,39 @@
+{
+  "experiment": "exp06_latency",
+  "network": "sepolia",
+  "runMode": "local-instant",
+  "blockIntervalMs": null,
+  "baseChainId": "11155111",
+  "nativeSymbol": "ETH",
+  "timestamp": "2026-07-03T09:00:11.079Z",
+  "txnCount": 3,
+  "statistics": {
+    "count": 3,
+    "minMs": 9436,
+    "avgMs": 11413,
+    "p50Ms": 10027,
+    "p95Ms": 14777,
+    "p99Ms": 14777,
+    "maxMs": 14777
+  },
+  "samples": [
+    {
+      "idx": 1,
+      "blockNumber": 11193154,
+      "latencyMs": 10027,
+      "gasUsed": "46886"
+    },
+    {
+      "idx": 2,
+      "blockNumber": 11193155,
+      "latencyMs": 14777,
+      "gasUsed": "46886"
+    },
+    {
+      "idx": 3,
+      "blockNumber": 11193156,
+      "latencyMs": 9436,
+      "gasUsed": "46886"
+    }
+  ]
+}

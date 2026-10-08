@@ -1,0 +1,149 @@
+
+contracts\RealShareERC1155.sol
+   13:1   warning  Missing @author tag in contract 'RealShareERC1155'                                                                    use-natspec
+   22:5   warning  Missing @notice tag in variable 'properties'                                                                          use-natspec
+   23:5   warning  Missing @notice tag in variable 'kycApproved'                                                                         use-natspec
+   25:5   warning  Missing @notice tag in event 'PropertyListed'                                                                         use-natspec
+   25:5   warning  Missing @param tag in event 'PropertyListed'                                                                          use-natspec
+   25:5   warning  Mismatch in @param names for event 'PropertyListed'. Expected: [propertyId, totalFractions, metadataURI], Found: []   use-natspec
+   25:5   warning  GC: [totalFractions] on Event [PropertyListed] could be Indexed                                                       gas-indexed-events
+   26:5   warning  Missing @notice tag in event 'PropertyDeactivated'                                                                    use-natspec
+   26:5   warning  Missing @param tag in event 'PropertyDeactivated'                                                                     use-natspec
+   26:5   warning  Mismatch in @param names for event 'PropertyDeactivated'. Expected: [propertyId], Found: []                           use-natspec
+   27:5   warning  Missing @notice tag in event 'KYCApproved'                                                                            use-natspec
+   27:5   warning  Missing @param tag in event 'KYCApproved'                                                                             use-natspec
+   27:5   warning  Mismatch in @param names for event 'KYCApproved'. Expected: [investor], Found: []                                     use-natspec
+   28:5   warning  Missing @notice tag in event 'KYCRevoked'                                                                             use-natspec
+   28:5   warning  Missing @param tag in event 'KYCRevoked'                                                                              use-natspec
+   28:5   warning  Mismatch in @param names for event 'KYCRevoked'. Expected: [investor], Found: []                                      use-natspec
+   29:5   warning  Missing @notice tag in event 'FractionsMinted'                                                                        use-natspec
+   29:5   warning  Missing @param tag in event 'FractionsMinted'                                                                         use-natspec
+   29:5   warning  Mismatch in @param names for event 'FractionsMinted'. Expected: [propertyId, to, amount], Found: []                   use-natspec
+   29:5   warning  GC: [amount] on Event [FractionsMinted] could be Indexed                                                              gas-indexed-events
+   34:5   warning  Missing @param tag in function 'listProperty'                                                                         use-natspec
+   34:5   warning  Mismatch in @param names for function 'listProperty'. Expected: [propertyId, totalFractions, metadataURI], Found: []  use-natspec
+   38:9   warning  GC: Use Custom Errors instead of require statements                                                                   gas-custom-errors
+   39:9   warning  GC: Use Custom Errors instead of require statements                                                                   gas-custom-errors
+   51:5   warning  Missing @param tag in function 'deactivateProperty'                                                                   use-natspec
+   51:5   warning  Mismatch in @param names for function 'deactivateProperty'. Expected: [propertyId], Found: []                         use-natspec
+   52:9   warning  GC: Use Custom Errors instead of require statements                                                                   gas-custom-errors
+   58:5   warning  Missing @param tag in function 'approveKYC'                                                                           use-natspec
+   58:5   warning  Mismatch in @param names for function 'approveKYC'. Expected: [investor], Found: []                                   use-natspec
+   64:5   warning  Missing @param tag in function 'revokeKYC'                                                                            use-natspec
+   64:5   warning  Mismatch in @param names for function 'revokeKYC'. Expected: [investor], Found: []                                    use-natspec
+   70:5   warning  Missing @param tag in function 'mintFractions'                                                                        use-natspec
+   70:5   warning  Mismatch in @param names for function 'mintFractions'. Expected: [propertyId, to, amount], Found: []                  use-natspec
+   72:9   warning  GC: Use Custom Errors instead of require statements                                                                   gas-custom-errors
+   73:9   warning  Error message for require is too long: 37 counted / 32 allowed                                                        reason-string
+   73:9   warning  GC: String exceeds 32 bytes                                                                                           gas-small-strings
+   73:9   warning  GC: Use Custom Errors instead of require statements                                                                   gas-custom-errors
+   74:9   warning  GC: Use Custom Errors instead of require statements                                                                   gas-custom-errors
+   74:17  warning  GC: Non strict inequality found. Try converting to a strict one                                                       gas-strict-inequalities
+   82:5   warning  Missing @param tag in function 'batchMintFractions'                                                                   use-natspec
+   82:5   warning  Mismatch in @param names for function 'batchMintFractions'. Expected: [propertyIds, to, amounts], Found: []           use-natspec
+   86:9   warning  GC: Use Custom Errors instead of require statements                                                                   gas-custom-errors
+   87:9   warning  Error message for require is too long: 37 counted / 32 allowed                                                        reason-string
+   87:9   warning  GC: String exceeds 32 bytes                                                                                           gas-small-strings
+   87:9   warning  GC: Use Custom Errors instead of require statements                                                                   gas-custom-errors
+   88:53  warning  GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas                                    gas-increment-by-one
+   90:13  warning  GC: Use Custom Errors instead of require statements                                                                   gas-custom-errors
+   91:13  warning  GC: Use Custom Errors instead of require statements                                                                   gas-custom-errors
+   91:21  warning  GC: Non strict inequality found. Try converting to a strict one                                                       gas-strict-inequalities
+  104:13  warning  Error message for require is too long: 34 counted / 32 allowed                                                        reason-string
+  104:13  warning  GC: String exceeds 32 bytes                                                                                           gas-small-strings
+  104:13  warning  GC: Use Custom Errors instead of require statements                                                                   gas-custom-errors
+  105:13  warning  Error message for require is too long: 37 counted / 32 allowed                                                        reason-string
+  105:13  warning  GC: String exceeds 32 bytes                                                                                           gas-small-strings
+  105:13  warning  GC: Use Custom Errors instead of require statements                                                                   gas-custom-errors
+  106:49  warning  GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas                                    gas-increment-by-one
+  107:17  warning  GC: Use Custom Errors instead of require statements                                                                   gas-custom-errors
+
+contracts\benchmark\BenchERC721.sol
+  14:1   warning  Missing @author tag in contract 'BenchERC721'                                                   use-natspec
+  15:5   warning  Missing @notice tag in variable 'nextTokenId'                                                   use-natspec
+  20:5   warning  Missing @param tag in function 'mintN'                                                          use-natspec
+  20:5   warning  Mismatch in @param names for function 'mintN'. Expected: [to, n], Found: []                     use-natspec
+  22:36  warning  GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas              gas-increment-by-one
+  24:13  warning  GC: For [ id ] variable, increment/decrement by 1 using: [ ++variable ] to save gas             gas-increment-by-one
+  30:5   warning  Missing @param tag in function 'distributeToMany'                                               use-natspec
+  30:5   warning  Mismatch in @param names for function 'distributeToMany'. Expected: [to, counts], Found: []     use-natspec
+  34:9   warning  GC: Use Custom Errors instead of require statements                                             gas-custom-errors
+  36:44  warning  GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas              gas-increment-by-one
+  37:48  warning  GC: For [ j ] variable, increment/decrement by 1 using: [ ++variable ] to save gas              gas-increment-by-one
+  39:17  warning  GC: For [ id ] variable, increment/decrement by 1 using: [ ++variable ] to save gas             gas-increment-by-one
+  46:5   warning  Missing @param tag in function 'transferN'                                                      use-natspec
+  46:5   warning  Mismatch in @param names for function 'transferN'. Expected: [from, to, startId, n], Found: []  use-natspec
+  47:36  warning  GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas              gas-increment-by-one
+
+contracts\benchmark\BenchERC20Factory.sol
+  12:1  warning  Missing @author tag in contract 'BenchERC20Factory'                                            use-natspec
+  13:5  warning  Missing @notice tag in variable 'properties'                                                   use-natspec
+  14:5  warning  Missing @notice tag in event 'PropertyDeployed'                                                use-natspec
+  14:5  warning  Missing @param tag in event 'PropertyDeployed'                                                 use-natspec
+  14:5  warning  Mismatch in @param names for event 'PropertyDeployed'. Expected: [index, token], Found: []     use-natspec
+  14:5  warning  GC: [token] on Event [PropertyDeployed] could be Indexed                                       gas-indexed-events
+  16:5  warning  Missing @notice tag in function 'deployProperty'                                               use-natspec
+  16:5  warning  Missing @param tag in function 'deployProperty'                                                use-natspec
+  16:5  warning  Mismatch in @param names for function 'deployProperty'. Expected: [name_, symbol_], Found: []  use-natspec
+  16:5  warning  Missing @return tag in function 'deployProperty'                                               use-natspec
+  16:5  warning  Mismatch in @return names for function 'deployProperty'. Expected: [token], Found: []          use-natspec
+  27:5  warning  Missing @notice tag in function 'count'                                                        use-natspec
+
+contracts\benchmark\BenchERC20.sol
+  14:1   warning  Missing @author tag in contract 'BenchERC20'                                                  use-natspec
+  21:5   warning  Missing @param tag in function 'mintTo'                                                       use-natspec
+  21:5   warning  Mismatch in @param names for function 'mintTo'. Expected: [to, amount], Found: []             use-natspec
+  27:5   warning  Missing @param tag in function 'distributeToMany'                                             use-natspec
+  27:5   warning  Mismatch in @param names for function 'distributeToMany'. Expected: [to, amounts], Found: []  use-natspec
+  31:9   warning  GC: Use Custom Errors instead of require statements                                           gas-custom-errors
+  32:44  warning  GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas            gas-increment-by-one
+
+contracts\benchmark\BenchERC1155.sol
+  17:1   warning  Missing @author tag in contract 'BenchERC1155'                                                          use-natspec
+  21:5   warning  Missing @param tag in function 'mintSingle'                                                             use-natspec
+  21:5   warning  Mismatch in @param names for function 'mintSingle'. Expected: [id, to, amount], Found: []               use-natspec
+  28:5   warning  Missing @param tag in function 'mintToMany'                                                             use-natspec
+  28:5   warning  Mismatch in @param names for function 'mintToMany'. Expected: [id, to, amounts], Found: []              use-natspec
+  32:9   warning  GC: Use Custom Errors instead of require statements                                                     gas-custom-errors
+  33:44  warning  GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas                      gas-increment-by-one
+  39:5   warning  Missing @param tag in function 'mintBatchOneRecipient'                                                  use-natspec
+  39:5   warning  Mismatch in @param names for function 'mintBatchOneRecipient'. Expected: [to, ids, amounts], Found: []  use-natspec
+  47:5   warning  Missing @param tag in function 'mintGrid'                                                               use-natspec
+  47:5   warning  Mismatch in @param names for function 'mintGrid'. Expected: [ids, to, amounts], Found: []               use-natspec
+  51:9   warning  GC: Use Custom Errors instead of require statements                                                     gas-custom-errors
+  52:45  warning  GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas                      gas-increment-by-one
+
+contracts\baselines\RealShareERC721.sol
+  13:1   warning  Missing @author tag in contract 'RealShareERC721'                                             use-natspec
+  14:5   warning  Missing @notice tag in variable 'nextTokenId'                                                 use-natspec
+  15:5   warning  Missing @notice tag in variable 'kycApproved'                                                 use-natspec
+  19:5   warning  Missing @notice tag in function 'approveKYC'                                                  use-natspec
+  19:5   warning  Missing @param tag in function 'approveKYC'                                                   use-natspec
+  19:5   warning  Mismatch in @param names for function 'approveKYC'. Expected: [investor], Found: []           use-natspec
+  24:5   warning  Missing @param tag in function 'batchMint'                                                    use-natspec
+  24:5   warning  Mismatch in @param names for function 'batchMint'. Expected: [to, n], Found: []               use-natspec
+  25:9   warning  Error message for require is too long: 33 counted / 32 allowed                                reason-string
+  25:9   warning  GC: String exceeds 32 bytes                                                                   gas-small-strings
+  25:9   warning  GC: Use Custom Errors instead of require statements                                           gas-custom-errors
+  26:36  warning  GC: For [ i ] variable, increment/decrement by 1 using: [ ++variable ] to save gas            gas-increment-by-one
+  28:13  warning  GC: For [ nextTokenId ] variable, increment/decrement by 1 using: [ ++variable ] to save gas  gas-increment-by-one
+
+contracts\baselines\RealShareERC20.sol
+  13:1  warning  Missing @author tag in contract 'RealShareERC20'                                      use-natspec
+  14:5  warning  Missing @notice tag in variable 'kycApproved'                                         use-natspec
+  18:5  warning  Missing @notice tag in function 'approveKYC'                                          use-natspec
+  18:5  warning  Missing @param tag in function 'approveKYC'                                           use-natspec
+  18:5  warning  Mismatch in @param names for function 'approveKYC'. Expected: [investor], Found: []   use-natspec
+  23:5  warning  Missing @param tag in function 'mintUnits'                                            use-natspec
+  23:5  warning  Mismatch in @param names for function 'mintUnits'. Expected: [to, amount], Found: []  use-natspec
+  24:9  warning  GC: Use Custom Errors instead of require statements                                   gas-custom-errors
+
+✖ 125 problems (0 errors, 125 warnings)
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ ===>          NEW  500+ Formal Verification checks → Free scan: https://bit.ly/dowsers          <=== │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ ===>                     Smart contract Audits by Protofire  |  Book a Call                     <=== │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────┘
+

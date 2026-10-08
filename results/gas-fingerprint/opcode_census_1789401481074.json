@@ -1,0 +1,106 @@
+{
+  "experiment": "opcode_census_real_operations",
+  "timestamp": "2026-09-14T15:58:01.074Z",
+  "note": "cold/warm reconstructed by replaying EIP-2929 access semantics over debug_traceTransaction struct logs",
+  "localGasSchedule": "Ethereum (Hardhat, cancun)",
+  "deploy": {
+    "label": "deploy",
+    "gasUsed": 1918983,
+    "counts": {
+      "coldSload": 2,
+      "warmSload": 0,
+      "coldSstore": 2,
+      "warmSstore": 2,
+      "coldAccount": 0,
+      "warmAccount": 0,
+      "log": 1,
+      "keccak": 1,
+      "total": 274
+    }
+  },
+  "operations": [
+    {
+      "label": "listProperty",
+      "gasUsed": 96571,
+      "counts": {
+        "coldSload": 3,
+        "warmSload": 1,
+        "coldSstore": 2,
+        "warmSstore": 2,
+        "coldAccount": 0,
+        "warmAccount": 0,
+        "log": 1,
+        "keccak": 2,
+        "total": 541
+      }
+    },
+    {
+      "label": "approveKYC",
+      "gasUsed": 47316,
+      "counts": {
+        "coldSload": 2,
+        "warmSload": 0,
+        "coldSstore": 0,
+        "warmSstore": 1,
+        "coldAccount": 0,
+        "warmAccount": 0,
+        "log": 1,
+        "keccak": 1,
+        "total": 153
+      }
+    },
+    {
+      "label": "approveKYC(self)",
+      "gasUsed": 47316,
+      "counts": {
+        "coldSload": 2,
+        "warmSload": 0,
+        "coldSstore": 0,
+        "warmSstore": 1,
+        "coldAccount": 0,
+        "warmAccount": 0,
+        "log": 1,
+        "keccak": 1,
+        "total": 153
+      }
+    },
+    {
+      "label": "mintFractions",
+      "gasUsed": 83598,
+      "counts": {
+        "coldSload": 6,
+        "warmSload": 2,
+        "coldSstore": 0,
+        "warmSstore": 2,
+        "coldAccount": 1,
+        "warmAccount": 0,
+        "log": 2,
+        "keccak": 4,
+        "total": 680
+      }
+    },
+    {
+      "label": "safeTransferFrom",
+      "gasUsed": 64082,
+      "counts": {
+        "coldSload": 5,
+        "warmSload": 0,
+        "coldSstore": 0,
+        "warmSstore": 2,
+        "coldAccount": 1,
+        "warmAccount": 0,
+        "log": 1,
+        "keccak": 9,
+        "total": 908
+      }
+    }
+  ],
+  "observedOnChainDelta": {
+    "deploy": 8400,
+    "listProperty": 11760,
+    "approveKYC": 6720,
+    "approveKYC(self)": 6720,
+    "mintFractions": 20160,
+    "safeTransferFrom": 15960
+  }
+}

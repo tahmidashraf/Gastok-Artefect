@@ -1,0 +1,89 @@
+{
+  "experiment": "exp08_scalability",
+  "network": "hardhat",
+  "timestamp": "2026-06-23T09:54:26.639Z",
+  "levels": [
+    5,
+    10,
+    15,
+    25,
+    50,
+    100,
+    250,
+    500
+  ],
+  "results": [
+    {
+      "users": 5,
+      "success": 5,
+      "failed": 0,
+      "errorRatePct": 0,
+      "elapsedMs": 13,
+      "tps": 384.6,
+      "avgGas": 69910
+    },
+    {
+      "users": 10,
+      "success": 10,
+      "failed": 0,
+      "errorRatePct": 0,
+      "elapsedMs": 15,
+      "tps": 666.7,
+      "avgGas": 66496
+    },
+    {
+      "users": 15,
+      "success": 15,
+      "failed": 0,
+      "errorRatePct": 0,
+      "elapsedMs": 21,
+      "tps": 714.3,
+      "avgGas": 66497
+    },
+    {
+      "users": 25,
+      "success": 25,
+      "failed": 0,
+      "errorRatePct": 0,
+      "elapsedMs": 35,
+      "tps": 714.3,
+      "avgGas": 66496
+    },
+    {
+      "users": 50,
+      "success": 50,
+      "failed": 0,
+      "errorRatePct": 0,
+      "elapsedMs": 66,
+      "tps": 757.6,
+      "avgGas": 66496
+    },
+    {
+      "users": 100,
+      "success": 100,
+      "failed": 0,
+      "errorRatePct": 0,
+      "elapsedMs": 149,
+      "tps": 671.1,
+      "avgGas": 66497
+    },
+    {
+      "users": 250,
+      "success": 250,
+      "failed": 0,
+      "errorRatePct": 0,
+      "elapsedMs": 367,
+      "tps": 681.2,
+      "avgGas": 66497
+    },
+    {
+      "users": 500,
+      "success": 500,
+      "failed": 0,
+      "errorRatePct": 0,
+      "elapsedMs": 735,
+      "tps": 680.3,
+      "avgGas": 66497
+    }
+  ]
+}

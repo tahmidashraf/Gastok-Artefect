@@ -1,0 +1,75 @@
+{
+  "experiment": "exp04_network_comparison",
+  "network": "polygonAmoy",
+  "chainId": "80002",
+  "nativeSymbol": "MATIC",
+  "timestamp": "2026-06-21T10:25:40.725Z",
+  "deployer": "0x71C59a35b79A18b0A44540501cB900761DC32fD0",
+  "contractAddress": "0x40aBAe00C9308159e66Bf86fCF6E33df175732AE",
+  "startBalance": "0.1",
+  "endBalance": "0.036699039867067984",
+  "totalNativeSpent": "0.063300960132932016",
+  "totalGasUsed": "2110032",
+  "operations": [
+    {
+      "label": "deploy",
+      "txHash": "0x81f7bbf5789f9fe3afb3fa15246c5403e6a527db67d69bec104875c3b614d228",
+      "blockNumber": 40537293,
+      "latencyMs": 5922,
+      "gasUsed": "1712159",
+      "gasPriceWei": "30000000063",
+      "feeWei": "51364770107866017",
+      "feeEther": "0.051364770107866017"
+    },
+    {
+      "label": "listProperty",
+      "txHash": "0x43ad212e9c2e4a069342e4f8a712320d9fd295837871425fd3338ac01d99d1f6",
+      "blockNumber": 40537296,
+      "latencyMs": 3320,
+      "gasUsed": "108525",
+      "gasPriceWei": "30000000063",
+      "feeWei": "3255750006837075",
+      "feeEther": "0.003255750006837075"
+    },
+    {
+      "label": "approveKYC",
+      "txHash": "0x8c99c6935f92546064c94deec548dba62dd159626b8720777bec23314950b522",
+      "blockNumber": 40537298,
+      "latencyMs": 3934,
+      "gasUsed": "54036",
+      "gasPriceWei": "30000000063",
+      "feeWei": "1621080003404268",
+      "feeEther": "0.001621080003404268"
+    },
+    {
+      "label": "approveKYC(self)",
+      "txHash": "0xf5c6ae3e007fe0b2165945158f3d1312ccebf0a1c727b593a5be0f7add4bfb02",
+      "blockNumber": 40537301,
+      "latencyMs": 4279,
+      "gasUsed": "54024",
+      "gasPriceWei": "30000000063",
+      "feeWei": "1620720003403512",
+      "feeEther": "0.001620720003403512"
+    },
+    {
+      "label": "mintFractions",
+      "txHash": "0x9cd9e0cb7d1f4732366b97effb6626b39f9adc68f3f8e6447e09ab9d4c1f9045",
+      "blockNumber": 40537303,
+      "latencyMs": 2705,
+      "gasUsed": "101258",
+      "gasPriceWei": "30000000063",
+      "feeWei": "3037740006379254",
+      "feeEther": "0.003037740006379254"
+    },
+    {
+      "label": "safeTransferFrom",
+      "txHash": "0x8b9d9def3808df5c1b8c09e94c6e692a950b41713c8909050954e4586bac35e3",
+      "blockNumber": 40537305,
+      "latencyMs": 3041,
+      "gasUsed": "80030",
+      "gasPriceWei": "30000000063",
+      "feeWei": "2400900005041890",
+      "feeEther": "0.00240090000504189"
+    }
+  ]
+}

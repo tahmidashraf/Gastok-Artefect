@@ -1,0 +1,120 @@
+{
+  "experiment": "estimate_gas_validation",
+  "timestamp": "2026-09-14T15:55:55.607Z",
+  "claim": "eth_estimateGas returns exact execution gas, equal to local receipt gasUsed under the same (Ethereum) schedule",
+  "exactAgreement": "0/15",
+  "rows": [
+    {
+      "probe": "ProbeBaseline",
+      "localHardhatGasUsed": 66854,
+      "sepoliaEstimateGas": 67702,
+      "delta": 848,
+      "error": null
+    },
+    {
+      "probe": "ProbeColdSstore1",
+      "localHardhatGasUsed": 89081,
+      "sepoliaEstimateGas": 90017,
+      "delta": 936,
+      "error": null
+    },
+    {
+      "probe": "ProbeColdSstore2",
+      "localHardhatGasUsed": 111288,
+      "sepoliaEstimateGas": null,
+      "delta": null,
+      "error": "chain is not available on free plan, please upgrade to paid "
+    },
+    {
+      "probe": "ProbeColdSstore4",
+      "localHardhatGasUsed": 155698,
+      "sepoliaEstimateGas": 156899,
+      "delta": 1201,
+      "error": null
+    },
+    {
+      "probe": "ProbeColdSstore8",
+      "localHardhatGasUsed": 244479,
+      "sepoliaEstimateGas": 247587,
+      "delta": 3108,
+      "error": null
+    },
+    {
+      "probe": "ProbeColdSstore16",
+      "localHardhatGasUsed": 421969,
+      "sepoliaEstimateGas": 426485,
+      "delta": 4516,
+      "error": null
+    },
+    {
+      "probe": "ProbeWarmSstore4",
+      "localHardhatGasUsed": 89137,
+      "sepoliaEstimateGas": 90074,
+      "delta": 937,
+      "error": null
+    },
+    {
+      "probe": "ProbeWarmSstore16",
+      "localHardhatGasUsed": 92038,
+      "sepoliaEstimateGas": 92986,
+      "delta": 948,
+      "error": null
+    },
+    {
+      "probe": "ProbeColdSload8",
+      "localHardhatGasUsed": 106902,
+      "sepoliaEstimateGas": 107909,
+      "delta": 1007,
+      "error": null
+    },
+    {
+      "probe": "ProbeColdSload32",
+      "localHardhatGasUsed": 158910,
+      "sepoliaEstimateGas": 160123,
+      "delta": 1213,
+      "error": null
+    },
+    {
+      "probe": "ProbeLog4",
+      "localHardhatGasUsed": 71621,
+      "sepoliaEstimateGas": 72488,
+      "delta": 867,
+      "error": null
+    },
+    {
+      "probe": "ProbeLog16",
+      "localHardhatGasUsed": 84305,
+      "sepoliaEstimateGas": 85222,
+      "delta": 917,
+      "error": null
+    },
+    {
+      "probe": "ProbeColdAccount8",
+      "localHardhatGasUsed": 110938,
+      "sepoliaEstimateGas": 111961,
+      "delta": 1023,
+      "error": null
+    },
+    {
+      "probe": "ProbeColdAccount32",
+      "localHardhatGasUsed": 174946,
+      "sepoliaEstimateGas": 177502,
+      "delta": 2556,
+      "error": null
+    },
+    {
+      "probe": "ProbeKeccak64",
+      "localHardhatGasUsed": 95893,
+      "sepoliaEstimateGas": 96856,
+      "delta": 963,
+      "error": null
+    },
+    {
+      "probe": "ProbeMemory",
+      "localHardhatGasUsed": 90122,
+      "sepoliaEstimateGas": 91063,
+      "delta": 941,
+      "error": null
+    }
+  ]
+}

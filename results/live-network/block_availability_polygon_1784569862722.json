@@ -1,0 +1,35 @@
+{
+  "experiment": "block_availability",
+  "chain": "polygon-mainnet",
+  "rpc": "https://polygon-bor-rpc.publicnode.com",
+  "headBlock": 90576523,
+  "nBlocks": 750,
+  "windows": 5,
+  "blocksPerWindow": 150,
+  "labels": "measured=gasUsed/gasLimit from chain; derived=capacity formulas; G_tx measured",
+  "G_tx_measured": 66485,
+  "blockInterval_measured_s": 1.5033557046979866,
+  "blockInterval_nominal_s": 2,
+  "gasLimit": {
+    "median": 160000000,
+    "min": 160000000,
+    "max": 160000000
+  },
+  "utilization": {
+    "mean": 0.2231,
+    "p25": 0.1537,
+    "p50": 0.1948,
+    "p75": 0.2468,
+    "p95": 0.411,
+    "max": 0.9997
+  },
+  "available_gas_median": 128830177,
+  "theoretical_TPS_full_block": 1600.8,
+  "app_TPS_at_available_share": {
+    "0.10": 128.9,
+    "0.25": 322.2,
+    "0.50": 644.5,
+    "0.75": 966.7
+  },
+  "note": "Corrects B2 with real data: gas limit is ~160M (not 30M); empirical median utilization ~19%. Application-available TPS derived from median UNUSED gas per block."
+}

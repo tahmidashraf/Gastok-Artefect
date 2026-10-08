@@ -1,0 +1,9 @@
+{
+  "status": "FOUND",
+  "activationBlock": 87218600,
+  "timestamp": 1779372258,
+  "date": "2026-05-21T14:04:18.000Z",
+  "gasBefore": 55221,
+  "gasAfter": 58581,
+  "delta": 3360
+}

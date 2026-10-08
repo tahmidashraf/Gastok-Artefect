@@ -1,0 +1,179 @@
+{
+  "experiment": "pg_concurrency",
+  "timestamp": "2026-07-15T03:18:57.198Z",
+  "env": {
+    "pg": "PostgreSQL 18 (embedded-postgres)",
+    "cpu": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+    "cores": 8,
+    "node": "v18.14.0"
+  },
+  "perWorkerCredits": 20,
+  "reps": 2,
+  "matrix": [
+    {
+      "isolation": "READ COMMITTED",
+      "workers": 1,
+      "totalEvents": 20,
+      "throughputMean": 990.3,
+      "retriesMean": 0,
+      "serializationRetriesMean": 0,
+      "deadlockRetriesMean": 0,
+      "terminalFailures": 0,
+      "consistent": true
+    },
+    {
+      "isolation": "READ COMMITTED",
+      "workers": 2,
+      "totalEvents": 40,
+      "throughputMean": 597,
+      "retriesMean": 0,
+      "serializationRetriesMean": 0,
+      "deadlockRetriesMean": 0,
+      "terminalFailures": 0,
+      "consistent": true
+    },
+    {
+      "isolation": "READ COMMITTED",
+      "workers": 5,
+      "totalEvents": 100,
+      "throughputMean": 847.7,
+      "retriesMean": 0,
+      "serializationRetriesMean": 0,
+      "deadlockRetriesMean": 0,
+      "terminalFailures": 0,
+      "consistent": true
+    },
+    {
+      "isolation": "READ COMMITTED",
+      "workers": 10,
+      "totalEvents": 200,
+      "throughputMean": 1105.1,
+      "retriesMean": 0,
+      "serializationRetriesMean": 0,
+      "deadlockRetriesMean": 0,
+      "terminalFailures": 0,
+      "consistent": true
+    },
+    {
+      "isolation": "READ COMMITTED",
+      "workers": 25,
+      "totalEvents": 500,
+      "throughputMean": 1259.6,
+      "retriesMean": 0,
+      "serializationRetriesMean": 0,
+      "deadlockRetriesMean": 0,
+      "terminalFailures": 0,
+      "consistent": true
+    },
+    {
+      "isolation": "REPEATABLE READ",
+      "workers": 1,
+      "totalEvents": 20,
+      "throughputMean": 1380.9,
+      "retriesMean": 0,
+      "serializationRetriesMean": 0,
+      "deadlockRetriesMean": 0,
+      "terminalFailures": 0,
+      "consistent": true
+    },
+    {
+      "isolation": "REPEATABLE READ",
+      "workers": 2,
+      "totalEvents": 40,
+      "throughputMean": 708.5,
+      "retriesMean": 0,
+      "serializationRetriesMean": 0,
+      "deadlockRetriesMean": 0,
+      "terminalFailures": 0,
+      "consistent": true
+    },
+    {
+      "isolation": "REPEATABLE READ",
+      "workers": 5,
+      "totalEvents": 100,
+      "throughputMean": 443.1,
+      "retriesMean": 6.5,
+      "serializationRetriesMean": 6.5,
+      "deadlockRetriesMean": 0,
+      "terminalFailures": 0,
+      "consistent": true
+    },
+    {
+      "isolation": "REPEATABLE READ",
+      "workers": 10,
+      "totalEvents": 200,
+      "throughputMean": 431.8,
+      "retriesMean": 27.5,
+      "serializationRetriesMean": 27.5,
+      "deadlockRetriesMean": 0,
+      "terminalFailures": 0,
+      "consistent": true
+    },
+    {
+      "isolation": "REPEATABLE READ",
+      "workers": 25,
+      "totalEvents": 500,
+      "throughputMean": 473.5,
+      "retriesMean": 146,
+      "serializationRetriesMean": 146,
+      "deadlockRetriesMean": 0,
+      "terminalFailures": 0,
+      "consistent": true
+    },
+    {
+      "isolation": "SERIALIZABLE",
+      "workers": 1,
+      "totalEvents": 20,
+      "throughputMean": 1483.5,
+      "retriesMean": 0,
+      "serializationRetriesMean": 0,
+      "deadlockRetriesMean": 0,
+      "terminalFailures": 0,
+      "consistent": true
+    },
+    {
+      "isolation": "SERIALIZABLE",
+      "workers": 2,
+      "totalEvents": 40,
+      "throughputMean": 684.3,
+      "retriesMean": 0,
+      "serializationRetriesMean": 0,
+      "deadlockRetriesMean": 0,
+      "terminalFailures": 0,
+      "consistent": true
+    },
+    {
+      "isolation": "SERIALIZABLE",
+      "workers": 5,
+      "totalEvents": 100,
+      "throughputMean": 385.5,
+      "retriesMean": 7,
+      "serializationRetriesMean": 7,
+      "deadlockRetriesMean": 0,
+      "terminalFailures": 0,
+      "consistent": true
+    },
+    {
+      "isolation": "SERIALIZABLE",
+      "workers": 10,
+      "totalEvents": 200,
+      "throughputMean": 374.9,
+      "retriesMean": 31,
+      "serializationRetriesMean": 31,
+      "deadlockRetriesMean": 0,
+      "terminalFailures": 0,
+      "consistent": true
+    },
+    {
+      "isolation": "SERIALIZABLE",
+      "workers": 25,
+      "totalEvents": 500,
+      "throughputMean": 435.6,
+      "retriesMean": 167.5,
+      "serializationRetriesMean": 167.5,
+      "deadlockRetriesMean": 0,
+      "terminalFailures": 0,
+      "consistent": true
+    }
+  ]
+}

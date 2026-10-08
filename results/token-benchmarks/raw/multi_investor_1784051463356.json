@@ -1,0 +1,693 @@
+{
+  "env": {
+    "experiment": "multi_investor_token_benchmark",
+    "timestamp": "2026-07-14T17:50:51.158Z",
+    "reps": 10,
+    "network": "hardhat",
+    "chainId": 31337,
+    "blockGasLimit": 60000000,
+    "solc": "0.8.27 (optimizer 200 runs, evmVersion cancun)",
+    "openzeppelin": "5.6.1",
+    "hardhat": "2.28.6",
+    "ethers": "6.17.0",
+    "node": "v18.14.0",
+    "os": "Windows_NT 10.0.26200 x64",
+    "cpu": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+    "cpuCores": 8,
+    "ramGB": 16.9
+  },
+  "A": {
+    "10": {
+      "units": 10,
+      "erc1155": {
+        "totalGas": {
+          "n": 10,
+          "mean": 52591,
+          "median": 52591,
+          "min": 52591,
+          "max": 52591,
+          "sd": 0,
+          "p90": 52591,
+          "p95": 52591,
+          "ci95": 0
+        },
+        "gasPerUnit": 5259.1,
+        "storageRecords": 1,
+        "tokenIds": 1,
+        "txCount": 1,
+        "timeMs": {
+          "n": 10,
+          "mean": 1.4,
+          "median": 1,
+          "min": 1,
+          "max": 3,
+          "sd": 0.66332495807108,
+          "p90": 2,
+          "p95": 3,
+          "ci95": 0.4111330684826994
+        }
+      },
+      "erc20": {
+        "totalGas": {
+          "n": 10,
+          "mean": 70608,
+          "median": 70608,
+          "min": 70608,
+          "max": 70608,
+          "sd": 0,
+          "p90": 70608,
+          "p95": 70608,
+          "ci95": 0
+        },
+        "gasPerUnit": 7060.8,
+        "storageRecords": 1,
+        "tokenIds": 0,
+        "txCount": 1,
+        "timeMs": {
+          "n": 10,
+          "mean": 1.4,
+          "median": 1,
+          "min": 1,
+          "max": 3,
+          "sd": 0.66332495807108,
+          "p90": 2,
+          "p95": 3,
+          "ci95": 0.4111330684826994
+        }
+      },
+      "erc721": {
+        "totalGas": {
+          "n": 10,
+          "mean": 318283,
+          "median": 318283,
+          "min": 318283,
+          "max": 318283,
+          "sd": 0,
+          "p90": 318283,
+          "p95": 318283,
+          "ci95": 0
+        },
+        "gasPerUnit": 31828.3,
+        "storageRecords": 10,
+        "tokenIds": 10,
+        "txCount": 1,
+        "timeMs": {
+          "n": 10,
+          "mean": 1.8,
+          "median": 2,
+          "min": 1,
+          "max": 3,
+          "sd": 0.6000000000000001,
+          "p90": 2,
+          "p95": 3,
+          "ci95": 0.37188385283580144
+        }
+      },
+      "sampleTx": {
+        "erc1155": "0xc024d79245902d96e189983225323811fc8252bc0af067414281609b96c0ebba",
+        "erc20": "0x85742cfbb79f0689d2ae9c1529fd34f1c3dc42a91303610e56a05895dcce765c",
+        "erc721": "0x01112e5c1efdd66ac5f14991bad8d3e56950270645c40a4d0cdf44de77e93d2c"
+      }
+    },
+    "50": {
+      "units": 50,
+      "erc1155": {
+        "totalGas": {
+          "n": 10,
+          "mean": 52591,
+          "median": 52591,
+          "min": 52591,
+          "max": 52591,
+          "sd": 0,
+          "p90": 52591,
+          "p95": 52591,
+          "ci95": 0
+        },
+        "gasPerUnit": 1051.82,
+        "storageRecords": 1,
+        "tokenIds": 1,
+        "txCount": 1,
+        "timeMs": {
+          "n": 10,
+          "mean": 1.3,
+          "median": 1,
+          "min": 1,
+          "max": 2,
+          "sd": 0.45825756949558405,
+          "p90": 2,
+          "p95": 2,
+          "ci95": 0.284030984225313
+        }
+      },
+      "erc20": {
+        "totalGas": {
+          "n": 10,
+          "mean": 70608,
+          "median": 70608,
+          "min": 70608,
+          "max": 70608,
+          "sd": 0,
+          "p90": 70608,
+          "p95": 70608,
+          "ci95": 0
+        },
+        "gasPerUnit": 1412.16,
+        "storageRecords": 1,
+        "tokenIds": 0,
+        "txCount": 1,
+        "timeMs": {
+          "n": 10,
+          "mean": 1.2,
+          "median": 1,
+          "min": 1,
+          "max": 2,
+          "sd": 0.4,
+          "p90": 2,
+          "p95": 2,
+          "ci95": 0.24792256855720093
+        }
+      },
+      "erc721": {
+        "totalGas": {
+          "n": 10,
+          "mean": 1318763,
+          "median": 1318763,
+          "min": 1318763,
+          "max": 1318763,
+          "sd": 0,
+          "p90": 1318763,
+          "p95": 1318763,
+          "ci95": 0
+        },
+        "gasPerUnit": 26375.26,
+        "storageRecords": 50,
+        "tokenIds": 50,
+        "txCount": 1,
+        "timeMs": {
+          "n": 10,
+          "mean": 3.8,
+          "median": 3.5,
+          "min": 3,
+          "max": 7,
+          "sd": 1.1661903789690602,
+          "p90": 4,
+          "p95": 7,
+          "ci95": 0.7228122854517625
+        }
+      },
+      "sampleTx": {
+        "erc1155": "0xd7586eccc44e974e9e77882e2ce541dac823f0868ab9c6d35ae1520717ba254c",
+        "erc20": "0xef8f2e78685c8b99e62bad56edb471c98ea1d1ebfb3135a88013f0bbb011bad5",
+        "erc721": "0x4b5a4ff8ab868e46bb4a8193d8ffc6cc2e9e8e17d1e2043ba8bb9060d4f6ffea"
+      }
+    },
+    "100": {
+      "units": 100,
+      "erc1155": {
+        "totalGas": {
+          "n": 10,
+          "mean": 52591,
+          "median": 52591,
+          "min": 52591,
+          "max": 52591,
+          "sd": 0,
+          "p90": 52591,
+          "p95": 52591,
+          "ci95": 0
+        },
+        "gasPerUnit": 525.91,
+        "storageRecords": 1,
+        "tokenIds": 1,
+        "txCount": 1,
+        "timeMs": {
+          "n": 10,
+          "mean": 1.1,
+          "median": 1,
+          "min": 1,
+          "max": 2,
+          "sd": 0.3,
+          "p90": 1,
+          "p95": 2,
+          "ci95": 0.1859419264179007
+        }
+      },
+      "erc20": {
+        "totalGas": {
+          "n": 10,
+          "mean": 70608,
+          "median": 70608,
+          "min": 70608,
+          "max": 70608,
+          "sd": 0,
+          "p90": 70608,
+          "p95": 70608,
+          "ci95": 0
+        },
+        "gasPerUnit": 706.08,
+        "storageRecords": 1,
+        "tokenIds": 0,
+        "txCount": 1,
+        "timeMs": {
+          "n": 10,
+          "mean": 1.1,
+          "median": 1,
+          "min": 1,
+          "max": 2,
+          "sd": 0.3,
+          "p90": 1,
+          "p95": 2,
+          "ci95": 0.1859419264179007
+        }
+      },
+      "erc721": {
+        "totalGas": {
+          "n": 10,
+          "mean": 2569363,
+          "median": 2569363,
+          "min": 2569363,
+          "max": 2569363,
+          "sd": 0,
+          "p90": 2569363,
+          "p95": 2569363,
+          "ci95": 0
+        },
+        "gasPerUnit": 25693.63,
+        "storageRecords": 100,
+        "tokenIds": 100,
+        "txCount": 1,
+        "timeMs": {
+          "n": 10,
+          "mean": 6.1,
+          "median": 6,
+          "min": 5,
+          "max": 7,
+          "sd": 0.5385164807134505,
+          "p90": 7,
+          "p95": 7,
+          "ci95": 0.3337759727721575
+        }
+      },
+      "sampleTx": {
+        "erc1155": "0x4ceb070ae37760a0a1bce661446036dfcbc3ad72552cacc3119faedcb9058814",
+        "erc20": "0xafa7d28cc8f406f423588ef64c345afc03f0c1e31899fdb1e50dfe1564b999e0",
+        "erc721": "0x8cd1b25152fb26d4f024f6a488f44318edcabb680b17746e543c172a9753f443"
+      }
+    },
+    "500": {
+      "units": 500,
+      "erc1155": {
+        "totalGas": {
+          "n": 10,
+          "mean": 52603,
+          "median": 52603,
+          "min": 52603,
+          "max": 52603,
+          "sd": 0,
+          "p90": 52603,
+          "p95": 52603,
+          "ci95": 0
+        },
+        "gasPerUnit": 105.206,
+        "storageRecords": 1,
+        "tokenIds": 1,
+        "txCount": 1,
+        "timeMs": {
+          "n": 10,
+          "mean": 1.2,
+          "median": 1,
+          "min": 1,
+          "max": 2,
+          "sd": 0.4,
+          "p90": 2,
+          "p95": 2,
+          "ci95": 0.24792256855720093
+        }
+      },
+      "erc20": {
+        "totalGas": {
+          "n": 10,
+          "mean": 70620,
+          "median": 70620,
+          "min": 70620,
+          "max": 70620,
+          "sd": 0,
+          "p90": 70620,
+          "p95": 70620,
+          "ci95": 0
+        },
+        "gasPerUnit": 141.24,
+        "storageRecords": 1,
+        "tokenIds": 0,
+        "txCount": 1,
+        "timeMs": {
+          "n": 10,
+          "mean": 1,
+          "median": 1,
+          "min": 1,
+          "max": 1,
+          "sd": 0,
+          "p90": 1,
+          "p95": 1,
+          "ci95": 0
+        }
+      },
+      "erc721": {
+        "totalGas": {
+          "n": 10,
+          "mean": 12574175,
+          "median": 12574175,
+          "min": 12574175,
+          "max": 12574175,
+          "sd": 0,
+          "p90": 12574175,
+          "p95": 12574175,
+          "ci95": 0
+        },
+        "gasPerUnit": 25148.35,
+        "storageRecords": 500,
+        "tokenIds": 500,
+        "txCount": 1,
+        "timeMs": {
+          "n": 10,
+          "mean": 27.2,
+          "median": 27,
+          "min": 26,
+          "max": 28,
+          "sd": 0.6000000000000001,
+          "p90": 28,
+          "p95": 28,
+          "ci95": 0.37188385283580144
+        }
+      },
+      "sampleTx": {
+        "erc1155": "0x0e52808d86f07fd6cc1bc05c706d372a29800c5ee282c453db6e87bc8d78f458",
+        "erc20": "0x68bd28696c283af6aeecbaedbde149bbc713bab10e0d6fb43a77d78d75dfc0bf",
+        "erc721": "0x5a59b9ccab809c257e01f62f5b8ab048f80e38adbc729ff107022dfea0436d3c"
+      }
+    }
+  },
+  "B": {
+    "10": {
+      "investors": 10,
+      "erc1155": {
+        "totalGas": 316100,
+        "gasPerInvestor": 31610,
+        "storageRecords": 10,
+        "txCount": 1
+      },
+      "erc20": {
+        "totalGas": 300120,
+        "gasPerInvestor": 30012,
+        "storageRecords": 10,
+        "txCount": 1
+      },
+      "erc721": {
+        "totalGas": 524722,
+        "gasPerInvestor": 52472.2,
+        "storageRecords": 10,
+        "tokenIds": 10,
+        "txCount": 1
+      },
+      "erc1155_individual": {
+        "totalGas": 525898,
+        "gasPerInvestor": 52589.8,
+        "txCount": 10,
+        "note": "X separate transactions (21000 base gas per tx included)"
+      }
+    },
+    "50": {
+      "investors": 50,
+      "erc1155": {
+        "totalGas": 1481494,
+        "gasPerInvestor": 29629.88,
+        "storageRecords": 50,
+        "txCount": 1
+      },
+      "erc20": {
+        "totalGas": 1314752,
+        "gasPerInvestor": 26295.04,
+        "storageRecords": 50,
+        "txCount": 1
+      },
+      "erc721": {
+        "totalGas": 2436874,
+        "gasPerInvestor": 48737.48,
+        "storageRecords": 50,
+        "tokenIds": 50,
+        "txCount": 1
+      },
+      "erc1155_individual": {
+        "totalGas": 2629490,
+        "gasPerInvestor": 52589.8,
+        "txCount": 50,
+        "note": "X separate transactions (21000 base gas per tx included)"
+      }
+    },
+    "100": {
+      "investors": 100,
+      "erc1155": {
+        "totalGas": 2938456,
+        "gasPerInvestor": 29384.56,
+        "storageRecords": 100,
+        "txCount": 1
+      },
+      "erc20": {
+        "totalGas": 2583054,
+        "gasPerInvestor": 25830.54,
+        "storageRecords": 100,
+        "txCount": 1
+      },
+      "erc721": {
+        "totalGas": 4827076,
+        "gasPerInvestor": 48270.76,
+        "storageRecords": 100,
+        "tokenIds": 100,
+        "txCount": 1
+      },
+      "erc1155_individual": {
+        "totalGas": 5258992,
+        "gasPerInvestor": 52589.92,
+        "txCount": 100,
+        "note": "X separate transactions (21000 base gas per tx included)"
+      }
+    },
+    "500": {
+      "investors": 500,
+      "erc1155": {
+        "totalGas": 14692316,
+        "gasPerInvestor": 29384.632,
+        "storageRecords": 500,
+        "txCount": 5,
+        "chunkedAt": 100,
+        "note": ">1 tx: single-tx distribution to 500 would exceed the block gas limit"
+      },
+      "erc20": {
+        "totalGas": 12846906,
+        "gasPerInvestor": 25693.812,
+        "storageRecords": 500,
+        "txCount": 5,
+        "chunkedAt": 100
+      },
+      "erc721": {
+        "totalGas": 24067016,
+        "gasPerInvestor": 48134.032,
+        "storageRecords": 500,
+        "tokenIds": 500,
+        "txCount": 5,
+        "chunkedAt": 100
+      }
+    }
+  },
+  "C": {
+    "1": {
+      "properties": 1,
+      "investorsPerProperty": 10,
+      "erc1155": {
+        "deployedContracts": 1,
+        "totalGas": 1667644,
+        "deployGas": 1351556,
+        "mintTxCount": 1,
+        "gasPerProperty": 1667644,
+        "gasPerInvestor": 166764.4
+      },
+      "erc20": {
+        "deployedContracts": 1,
+        "factoryDeployGas": 977874,
+        "perPropertyDeployGas": 691227,
+        "totalGas": 1969209,
+        "distTxCount": 1,
+        "gasPerProperty": 1969209,
+        "gasPerInvestor": 196920.9
+      },
+      "erc721": {
+        "deployedContracts": 1,
+        "totalGas": 1708507,
+        "deployGas": 1183797,
+        "mintTxCount": 1,
+        "gasPerProperty": 1708507,
+        "gasPerInvestor": 170850.7,
+        "note": "token-id-per-fraction; ids grow with P*investors"
+      }
+    },
+    "10": {
+      "properties": 10,
+      "investorsPerProperty": 10,
+      "erc1155": {
+        "deployedContracts": 1,
+        "totalGas": 4512544,
+        "deployGas": 1351556,
+        "mintTxCount": 10,
+        "gasPerProperty": 451254.4,
+        "gasPerInvestor": 45125.44
+      },
+      "erc20": {
+        "deployedContracts": 10,
+        "factoryDeployGas": 977874,
+        "perPropertyDeployGas": 6758370,
+        "totalGas": 10737324,
+        "distTxCount": 10,
+        "gasPerProperty": 1073732.4,
+        "gasPerInvestor": 107373.24
+      },
+      "erc721": {
+        "deployedContracts": 1,
+        "totalGas": 4737997,
+        "deployGas": 1183797,
+        "mintTxCount": 10,
+        "gasPerProperty": 473799.7,
+        "gasPerInvestor": 47379.97,
+        "note": "token-id-per-fraction; ids grow with P*investors"
+      }
+    },
+    "25": {
+      "properties": 25,
+      "investorsPerProperty": 10,
+      "erc1155": {
+        "deployedContracts": 1,
+        "totalGas": 9254344,
+        "deployGas": 1351556,
+        "mintTxCount": 25,
+        "gasPerProperty": 370173.76,
+        "gasPerInvestor": 37017.376
+      },
+      "erc20": {
+        "deployedContracts": 25,
+        "factoryDeployGas": 977874,
+        "perPropertyDeployGas": 16870680,
+        "totalGas": 25351554,
+        "distTxCount": 25,
+        "gasPerProperty": 1014062.16,
+        "gasPerInvestor": 101406.216
+      },
+      "erc721": {
+        "deployedContracts": 1,
+        "totalGas": 9787447,
+        "deployGas": 1183797,
+        "mintTxCount": 25,
+        "gasPerProperty": 391497.88,
+        "gasPerInvestor": 39149.788,
+        "note": "token-id-per-fraction; ids grow with P*investors"
+      }
+    },
+    "50": {
+      "properties": 50,
+      "investorsPerProperty": 10,
+      "erc1155": {
+        "deployedContracts": 1,
+        "totalGas": 17157144,
+        "deployGas": 1351556,
+        "mintTxCount": 50,
+        "gasPerProperty": 343142.88,
+        "gasPerInvestor": 34314.288
+      },
+      "erc20": {
+        "deployedContracts": 50,
+        "factoryDeployGas": 977874,
+        "perPropertyDeployGas": 33724530,
+        "totalGas": 49708404,
+        "distTxCount": 50,
+        "gasPerProperty": 994168.08,
+        "gasPerInvestor": 99416.808
+      },
+      "erc721": {
+        "deployedContracts": 1,
+        "totalGas": 18202997,
+        "deployGas": 1183797,
+        "mintTxCount": 50,
+        "gasPerProperty": 364059.94,
+        "gasPerInvestor": 36405.994,
+        "note": "token-id-per-fraction; ids grow with P*investors"
+      }
+    }
+  },
+  "D": {
+    "erc1155": {
+      "oneToOne": 57079,
+      "batchTwoIds": 71868
+    },
+    "oneToMany10": {
+      "erc1155": {
+        "totalGas": 570910,
+        "gasPerRecipient": 57091
+      },
+      "erc20": {
+        "totalGas": 515310,
+        "gasPerRecipient": 51531
+      }
+    },
+    "manyToOne5": {
+      "erc1155": {
+        "totalGas": 217055,
+        "gasPerSender": 43411,
+        "senders": 5
+      }
+    }
+  },
+  "determinism": {
+    "erc1155_mintSingle_50": {
+      "samples": 10,
+      "gas": {
+        "n": 10,
+        "mean": 52591,
+        "median": 52591,
+        "min": 52591,
+        "max": 52591,
+        "sd": 0,
+        "p90": 52591,
+        "p95": 52591,
+        "ci95": 0
+      },
+      "allIdentical": true
+    },
+    "erc1155_mintToMany_10": {
+      "samples": 10,
+      "gas": {
+        "n": 10,
+        "mean": 316112,
+        "median": 316112,
+        "min": 316112,
+        "max": 316112,
+        "sd": 0,
+        "p90": 316112,
+        "p95": 316112,
+        "ci95": 0
+      },
+      "allIdentical": true
+    },
+    "erc721_mintN_10": {
+      "samples": 10,
+      "gas": {
+        "n": 10,
+        "mean": 318283,
+        "median": 318283,
+        "min": 318283,
+        "max": 318283,
+        "sd": 0,
+        "p90": 318283,
+        "p95": 318283,
+        "ci95": 0
+      },
+      "allIdentical": true
+    }
+  }
+}

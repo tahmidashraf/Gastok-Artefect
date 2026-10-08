@@ -1,0 +1,10 @@
+{
+  "experiment": "pg_backup_restore",
+  "timestamp": "2026-07-15T09:19:19.414Z",
+  "beforeBackup": 50,
+  "afterRestore": 50,
+  "replayDuplicate": true,
+  "afterReplay": 50,
+  "recoveryMs": 5059,
+  "pass": true
+}
