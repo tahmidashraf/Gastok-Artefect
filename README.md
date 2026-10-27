@@ -1,4 +1,4 @@
-# GasTok — Reproducibility Artefact
+# Reproducibility Artefact
 
 Artefact for the paper *"GasTok: EVM Compatibility Does Not Imply Gas Equivalence in
 Tokenization Cost Models"* (C. M. T. Ashraf, Universiti Teknologi PETRONAS).
